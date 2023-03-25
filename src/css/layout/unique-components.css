@@ -3,13 +3,13 @@ img {
 }
 /* it mosts to be in base */
 .section.unique-components {
-  padding: 36px 0;
+  padding: 72px 0;
   background-color: #fafafa;
   /* var-color mosts to be here */
 }
 
-.container {
-}
+/* .container {
+} */
 
 .unique-components .section-title {
   margin-bottom: 24px;
