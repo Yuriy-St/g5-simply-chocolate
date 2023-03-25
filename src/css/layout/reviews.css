@@ -1,0 +1,19 @@
+/* .reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.reviews-item {
+  position: relative;
+  width: 300px;
+  text-align: center;
+  padding-top: 56px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #ffffff;
+}
+.reviews-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
