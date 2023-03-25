@@ -15,36 +15,102 @@
     --white-color: #FAFAFA;
 }
 
-.foot-title {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
+
+.footer {
+    background-color: var(--dark-background-color);
     color: var(--secondary-text-color);
 }
+    
+@media (max-width: 767px) {
+    .footer {
+        display: block;
+    }
+    
+    .foot-cont {
+        padding: 32px 20px;
+    }
+    
+    .foot-div {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 20px 32px 0;
+    }
+
+    .foot-title {
+        marg4in: 32px auto 32px 20px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.02em;
+        color: var(--secondary-text-color);
+    }
+
+    .address-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: left;
+    }
+    
+    .address-link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: left: ;;
+        letter-spacing: -0.02em;
+    }
+
+    .social-icon {
+        width: 22px;
+        height: 22px;
+        fill: var(--secondary-text-color);
+    }
+    
+        .icon-close:hover {
+            fill: var(--background-color);
+        }
+ }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+        .footer {
+            display: flex;
+        }
+
+        .foot-title {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 1.21;
+            letter-spacing: -0.02em;
+            color: var(--secondary-text-color);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .footer {
+            display: flex;
+        }
+
+        .foot-title {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 1.21;
+            letter-spacing: -0.02em;
+            color: var(--secondary-text-color);
+        }
+    }
+
+
 
 .foot-title span {
     color: var(--orange-color);
 }
 
-@media (max-width: 767px) {
-    .footer {
-        display: block;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-.footer {
-        display: flex;
-    }
-}
-
-
-@media (min-width: 1200px) {
-.footer {
-        display: flex;
-    }
-}
 
 
 /* Модальное окно */
