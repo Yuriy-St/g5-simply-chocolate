@@ -1,6 +1,8 @@
 :root {
   /* брендовий текст, кнопка, hover */
   --primary-brand-color: #fd9222;
+  /* ховер на кнопку, елементи модалок */
+  --secondary-brand-color: rgba(252, 241, 224, 1);
   /* чорний текст, icon */
   --primary-text-color: #111111;
   /* білий текст */
