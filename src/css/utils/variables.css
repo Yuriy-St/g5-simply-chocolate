@@ -13,4 +13,21 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  
+  /* чорний текст, icon */
+  --primary-text-color: #111111;
+  /* білий текст */
+  --secondary-text-color: #FFFFFF;
+  /* оранжевий текст, кнопка, hover */
+  --orange-color: #FD9222;
+  
+  /* сірий фон */
+  --light-background-color: #E2E2E2;
+  /* темно фіолетовий фон */
+  --dark-background-color: #1E1823;
+  
+  /* ще якийсь білий колір з макета */
+  --white-color: #FAFAFA;
 }
+

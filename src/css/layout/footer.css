@@ -1,0 +1,34 @@
+:root {
+/* чорний текст, icon */
+    --primary-text-color: #111111;
+/* білий текст */
+    --secondary-text-color: #FFFFFF;
+/* оранжевий текст, кнопка, hover */
+    --orange-color: #FD9222;
+
+/* сірий фон */
+    --light-background-color: #E2E2E2;
+/* темно фіолетовий фон */
+    --dark-background-color: #1E1823;
+
+/* ще якийсь білий колір з макета */
+    --white-color: #FAFAFA;
+}
+
+.foot-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: var(--secondary-text-color);
+}
+
+.foot-title span {
+    color: var(--orange-color);
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        display: block;
+    }
+}
