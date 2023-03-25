@@ -37,7 +37,6 @@
     }
 
     .foot-title {
-        marg4in: 32px auto 32px 20px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
@@ -48,6 +47,7 @@
     }
 
     .address-title {
+        margin-bottom: 14px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
@@ -56,14 +56,23 @@
         text-align: left;
     }
     
+    .address-list {
+        margin-top: 4px;
+    }
+
     .address-link {
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.29;
-        text-align: left: ;;
+        text-align: left;
         letter-spacing: -0.02em;
+    }
+
+    .social-list {
+        display: flex;
+        gap: 14px;
     }
 
     .social-icon {
@@ -72,9 +81,28 @@
         fill: var(--secondary-text-color);
     }
     
-        .icon-close:hover {
-            fill: var(--background-color);
-        }
+    .icon-close:hover {
+        fill: var(--background-color);
+    }
+
+    .foot.nav {
+        margin-top: 64px;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .nav-link {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+    }
  }
 
     @media (min-width: 768px) and (max-width: 1199px) {
