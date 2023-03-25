@@ -4,15 +4,15 @@
 /* білий текст */
     --secondary-text-color: #FFFFFF;
 /* оранжевий текст, кнопка, hover */
-    --orange-color: #FD9222;
+    --primary-brand-color: #FD9222;
 
 /* сірий фон */
     --light-background-color: #E2E2E2;
 /* темно фіолетовий фон */
     --dark-background-color: #1E1823;
 
-/* ще якийсь білий колір з макета */
-    --white-color: #FAFAFA;
+/* ще якийсь білий колір з макету */
+    --modal-order-button-color: #FAFAFA;
 }
 
 
@@ -27,6 +27,7 @@
     }
     
     .foot-cont {
+        position: relative;
         padding: 32px 20px;
     }
     
@@ -85,14 +86,28 @@
         fill: var(--background-color);
     }
 
+    .foot-div::after {
+        position: absolute;
+        width: 335px;
+        height: 0px;
+        left: auto;
+        top: 232px;
+        display: block;
+        content: "";
+        height: 1px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transform: rotate(180deg);      
+        transition-property: color;
+    }
+
     .foot.nav {
-        margin-top: 64px;
+        margin-top: 32px;
     }
 
     .nav-list {
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 12px;
     }
 
     .nav-link {
