@@ -1,16 +1,22 @@
-/* Variables */
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* брендовий текст, кнопка, hover */
+  --primary-brand-color: #fd9222;
+  /* ховер на кнопку, елементи модалок */
+  --secondary-brand-color: rgba(252, 241, 224, 1);
+  /* чорний текст, icon */
+  --primary-text-color: #111111;
+  /* білий текст */
+  --inverted-text-color: #ffffff;
+  /* сірий текст */
+  --light-text-color: rgba(17, 17, 17, 0.7);
+  /* сіра окантовка кнопок*/
+  --light-stroke-color: rgba(17, 17, 17, 0.1);
+  /* текст в інпут-плейсхолдерах */
+  --placeholder-text-color: rgba(64, 64, 64, 0.3);
+  /* сірий фон */
+  --light-background-color: #e2e2e2;
+  /* темно фіолетовий фон */
+  --dark-background-color: #1e1823;
+  /* ще якийсь білий колір з макету */
+  --white-color: #fafafa;
 }
