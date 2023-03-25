@@ -8,4 +8,57 @@
 
     <button type="button" class="subscribe-btn">Subscribe</button>
 
+
+    <!-- Модальное окно в subscribe "LEAVE A REVIEW ABOUT OUR CHOCOLATE"-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="subscribe-modal">
+            <button type="button" class="order-close" data-modal-close>
+                <svg class="modal-close-icon">
+                    <use href=""></use>
+                </svg>
+            </button>
+            
+            <h3 class="subscribe-modal-title">LEAVE A REVIEW ABOUT</br> <span>OUR CHOCOLATE</span></h3>
+            
+            <form class="subscribe-modal-form">
+                <input type="text" class="subscribe-form-input" name="name" id="name" placeholder="Name" />
+                <input type="email" class="subscribe-form-input" name="mail" id="mail" placeholder="Email" />
+                <div class="form-field">
+                    <label for="phone" class="subscribe-form-label">+380
+                        <span class="flag-icon">
+                            <input type="phone" class="subscribe-form-input" name="phone" id="phone" placeholder="Phone number" />
+                                <svg class="flag-icon" width="" height="">
+                                    <use href=""></use>
+                                </svg>
+                        </span>
+                    </label>
+                </div>
+                <textarea class="comment-input" name="comment" id="comment" rows="" placeholder=" Enter text"></textarea>
+                    
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно в subscribe "Thank you for your feedback!"-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="subscribe-modal">
+            <button type="button" class="order-close" data-modal-close>
+                <svg class="modal-close-icon">
+                    <use href=""></use>
+                </svg>
+            </button>
+    
+            <h3 class="subscribe-modal-title">Thank you</br> for your feedback!</h3>
+
+            <p class="form-text">We are so happy to hear from you!</p>
+
+            <div>
+                <svg class="choko-icon" width="" height="">
+                    <use href=""></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+
 </section>
