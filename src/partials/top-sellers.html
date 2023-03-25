@@ -1,24 +1,25 @@
 <section class="top-sellers section">
     <div class="container">
-        <h2 class="top-sellers-title">TOP SELLERS</h2>
+        <h2 class="top-sellers-title"> <span class="akcent-title">TOP</span> SELLERS</h2>
         <ul class="top-sellers-list list">
-            <li class="showcase"> <img
+            <li class="top-sellers-showcase"> <img
                     srcset="../img/top-sellers/nut-desktop.jpg 1x,../img/top-sellers/nut-desktop@2x.jpg 2x "
                     src="../img/top-sellers/nut-desktop.jpg" alt="black chocolate, coffee & nuts" width="368"
                     height="464"> </li>
-            <li class="showcase"> <img
+            <p class="top-sellers-comment">Crazy enough chocolate originates from a bean just like the coffee bean
+                called Cacao. Cacao has been
+                around for thousands of years and was first discovered by the Native American tribe called the Mayans.
+            </p>
+            <li class="top-sellers-showcase"> <img
                     srcset="../img/top-sellers/chocolate-desktop.jpg 1x,../img/top-sellers/chocolate-desktop@2x.jpg"
                     src="../img/top-sellers/chocolate-desktop.jpg" alt="milk chocolate with caramel, mint & cinnamon"
                     width="368" height="464">
             </li>
-            <li class="showcase"> <img
+            <li class="top-sellers-showcase-candy"> <img
                     srcset="../img/top-sellers/candy-desktop.jpg 1x, ../img/top-sellers/candy-desktop@2x.jpg"
                     src="../img/top-sellers/candy-desktop.jpg" alt="black & milk chocolate" width="368" height="464">
             </li>
-            <p class="top-sellers-content">Crazy enough chocolate originates from a bean just like the coffee bean
-                called Cacao. Cacao has been
-                around for thousands of years and was first discovered by the Native American tribe called the Mayans.
-            </p>
+
             <button type="button" class="orange-button" data-modal-open>Buy now</button>
         </ul>
     </div>
@@ -28,10 +29,10 @@
     <div class="order-modal">
         <button type="button" class="order-close" data-modal-close>
             <svg class="modal-close-icon">
-                <use href=""></use>
+                <use href="../img/sprite.svg#close"></use>
             </svg>
         </button>
-        <h3 class="order-modal-title">BUY NOW</h3>
+        <h3 class="order-modal-title"> <span class="akcent-title">BUY</span> NOW</h3>
         <form class="order-modal-form">
             <div class="order-form-field">
                 <div class="order-swiper-wrapper">
@@ -40,7 +41,7 @@
                             srcset="../img/buy-now/chocolate-desktop.jpg 1x, ../img/buy-now/chocolate-desktop@2x.jpg 2x"
                             src="../img/buy-now/chocolate-desktop.jpg"
                             alt="kinder-chocolate-white-chocolate-chocolate-nuts" width="167" height="148">
-                        <button type="button" class="weight-selection-button"> 100g</button>
+                        <button type="button" class="weight-selection-button">100g</button>
                     </div>
                     <div class="order-swiper-slide"><img
                             srcset="../img/buy-now/chocolate-white-desktop.jpg 1x, ../img/buy-now/chocolate-white-desktop@2x.jpg 2x"
@@ -71,7 +72,7 @@
                 </div>
                 <div class="form-field">
                     <label for="phone" class="customer-form-label">Phone number
-                        <span class="flag-icon">
+                        <span class="country-code">
                             <input type="phone" class="customer-form-input" name="phone" id="phone"
                                 placeholder="Phone number" />
                             <svg class="flag-icon" width="" height="">
@@ -96,7 +97,7 @@
                         placeholder=" Enter text"></textarea>
                 </div>
                 <div class="button-field">
-                    <button type="submit" class="orange-button" width="" height="">
+                    <button type="submit" class="modal-orange-button" width="" height="">
                         Submit
                     </button>
                 </div>
