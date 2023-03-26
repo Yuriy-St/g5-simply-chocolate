@@ -1,63 +1,58 @@
 .our-products {
-  background-color: #e2e2e2;
+  background-color: var(--light-background-color);
 }
 .o_p-title {
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
-  color: #fd9222;
+  margin-bottom: 50px;
+  color: var(--primary-brand-color);
 }
 .o_p-title > span {
-  color: #111111;
+  color: var(--primary-text-color);
 }
 .o_p-list {
   display: flex;
   gap: 18px;
 }
 .o_p-item {
-  background-color: #ffffff;
+  background-color: var(--inverted-text-color);
   padding: 20px 32px;
+  border: 1px solid var(--light-stroke-color);
+  border-radius: 15px;
 }
 .o_p-card-block {
   text-align: center;
 }
 .o_p-card-name {
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   margin-top: 8px;
-  color: #111111;
+  color: var(--primary-text-color);
 }
 .o_p-name-product {
-  font-family: 'Montserrat';
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: -0.02em;
   text-align: center;
   margin-top: 2px;
-  color: rgba(17, 17, 17, 0.7);
+  color: var(--light-text-color);
 }
 
 .o_p-card-price {
   display: inline-block;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
-  font-size: 14px;
   line-height: 1.21;
   text-align: center;
-  color: #111111;
+  color: var(--primary-text-color);
   margin-top: 18px;
 
   background: #fafafa;
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid var(--light-stroke-color);
   border-radius: 100px;
   padding: 8px 20px;
 }
