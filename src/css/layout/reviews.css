@@ -1,20 +1,28 @@
 .reviews {
   padding-bottom: 70px;
 }
+
 .reviews-title {
   margin-bottom: 32px;
   text-transform: uppercase;
   text-align: center;
 }
+
 .reviews-title .title-brand {
   color: var(--primary-brand-color);
 }
+
 .reviews-list {
 }
+
 .reviews-item {
+  width: 310px;
 }
+
 .reviews-wrapper-image {
+  width: 80px;
 }
+
 .reviews-logo {
 }
 .reviews-item-title {
