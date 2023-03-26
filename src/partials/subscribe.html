@@ -10,18 +10,19 @@
     </div>
 
     <!-- Модальное окно в subscribe "Explore our new chocolate first"-->
-    <div class="backdrop is-hidden" data-modal>
-        <div class="subscribe-form">
-            <img src="../img/explore/review-desktop.jpg" alt="Chocolate" width="538">
+    <!--<div class="backdrop is-hidden" data-modal>-->
+        <div class="subscribe-modal modal">
+            <img class="subscribe-modal-img" src="../img/explore/review-mobile.jpg" alt="Chocolate" width="538">
             <h3 class="form-title">Explore our<br><span>new chocolate</span> first!</h3>
-            <form class="submit-form" name="submit-form" autocomplete="on">
-                <div class="submit-form-input">
-                    <input class="foot-input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+            <div class="submit-form">
+                <form class="submit-form" name="submit-form" autocomplete="on">
+                    <div class="submit-form-input">
+                        <input class="foot-input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                            placeholder="Enter your email" required />
-                </div>
+                    </div>
                 
-                <button class="submit-btn" type="submit">Submit</button>
-                
+                    <button class="submit-btn" type="submit" data-modal-open>Submit</button>
+            </div>
                 <button class="close" type="button" data-modal-close>
                     <svg class="close-icon">
                         <use href="../img/sprite.svg#close"></use>
@@ -29,6 +30,8 @@
                 </button>
             </form>
         </div>
-    </div>
+    <!--</div>-->
 
 </section>
+
+
