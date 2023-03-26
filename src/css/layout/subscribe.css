@@ -17,66 +17,99 @@
     --modal-order-button-color: #FAFAFA;
 }
 
-@media (max-width: 767px) {
+.subscribe {
+    display: block;
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(../img/subscribe/subcribe-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--dark-background-color);
+    color: var(--secondary-text-color);
+}
+
+.subscribe-div {
+    padding: 62px 0;
+}
+
+.subscribe .section-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.subscribe .text {
+    max-width: 326px;
+       font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin: 24px auto;
+}
+
+.subscribe-div .button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;  
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    background-color: var(--primary-brand-color);
+    color: var(--secondary-text-color);
+    align-items: center;
+    width: 128px;
+    height: 41px;
+    transition-property: background-color;
+}
+    
+.subscribe-div. button:hover {
+    background-color: var(--secondary-brand-color);
+    color: var(--primary-brand-color);
+}
+
+
+@media (min-width: 768px) {
     .subscribe {
-        display: block;
-        /*max-width: 375px;*/
-        text-align: center;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(../img/subscribe/subcribe-mobile.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: var(--dark-background-color);
-        color: var(--secondary-text-color);
+            url(../img/subscribe/subcribe-tablet.jpg);
     }
 
     .subscribe-div {
-        padding: 62px 0;
+        padding: 72px 0;
     }
 
     .subscribe .section-title {
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 600;
-        font-size: 20px;
-        line-height: 1.2;
-        text-align: center;
-        letter-spacing: -0.03em;
-        text-transform: uppercase;
+        font-size: 24px;
+        line-height: 1.17;
     }
 
     .subscribe .text {
-        max-width: 326px;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.29;
-        text-align: center;
-        letter-spacing: -0.02em;
-        margin: 24px 0;
+        max-width: 467px;
     }
 
     .subscribe-div .button {
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 1.21;  
-        border: none;
-        border-radius: 100px;
-        text-align: center;
-        background-color: var(--primary-brand-color);
-        color: var(--secondary-text-color);
-        align-items: center;
-        width: 128px;
-        height: 41px;
-        transition-property: background-color;
-    }
-    
-    .subscribe-div. button:hover {
-        background-color: var(--secondary-brand-color);
-        color: var(--primary-brand-color);
+        font-size: 18px;
+        line-height: 1.22;
+        width: 172px;
+        height: 50px;
     }
 }
-    
+
+@media (min-width: 1200px) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/subcribe-desktop.jpg);
+    }
+}
