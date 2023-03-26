@@ -1,6 +1,6 @@
 <section class="subscribe container section">
     <div class="subscribe-div">
-        <h2 class="section-title">Explore our new </br> chocolate first</h2>
+        <h2 class="section-title">Explore our new <br> chocolate first</h2>
 
         <p class="text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you
             craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art
@@ -13,18 +13,22 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="subscribe-form">
             <img src="../img/explore/review-desktop.jpg" alt="Chocolate" width="538">
-            <h3 class="form-title">Explore our</br><span>new chocolate</span> first!</h3>
+            <h3 class="form-title">Explore our<br><span>new chocolate</span> first!</h3>
             <form class="submit-form" name="submit-form" autocomplete="on">
                 <div class="submit-form-input">
                     <input class="foot-input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                            placeholder="Enter your email" required />
                 </div>
+                
                 <button class="submit-btn" type="submit">Submit</button>
+                
+                <button class="close" type="button" data-modal-close>
+                    <svg class="close-icon">
+                        <use href="../img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
-        <button class="close" type="button" data-modal-close>
-            <svg class="close-icon">
-                <use href="../img/sprite.svg#close"></use>
-            </svg>
-        </button>
+    </div>
 
 </section>
