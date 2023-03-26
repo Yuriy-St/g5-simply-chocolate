@@ -1,23 +1,3 @@
-.container {
-  width: 100%;
-  max-width: 375px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1136px;
-  }
-}
-
 .header {
   padding-top: 20px;
   padding-bottom: 14px;
@@ -39,6 +19,7 @@
 .header-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -78,6 +59,7 @@
 @media screen and (min-width: 1200px) {
   .nav-menu-header {
     display: flex;
+    align-items: center;
     gap: 137px;
   }
 }
@@ -123,9 +105,15 @@
 }
 
 .nav-link-header {
+  display: block;
   font-weight: 500;
   line-height: 1.14;
   color: #fff;
+}
+
+.nav-link-header:focus,
+.nav-link-header:hover {
+  color: var(--primary-brand-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -149,6 +137,7 @@
 
 @media screen and (min-width: 1200px) {
   .social-list-header {
+    align-self: auto;
     margin-left: 0;
   }
 }
@@ -187,6 +176,11 @@
   fill: #fff;
 }
 
+.menu-icon-close:focus,
+.menu-icon-close:hover {
+  fill: var(--primary-brand-color);
+}
+
 @media screen and (min-width: 1200px) {
   .menu-icon-close {
     display: none;
@@ -195,6 +189,11 @@
 
 .social-link-icon {
   fill: #fff;
+}
+
+.social-link-icon:focus,
+.social-link-icon:hover {
+  fill: var(--primary-brand-color);
 }
 
 @media screen and (min-width: 1200px) {
