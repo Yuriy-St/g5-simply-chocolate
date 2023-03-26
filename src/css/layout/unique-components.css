@@ -22,7 +22,6 @@
   margin-bottom: 32px;
 
   font-weight: 400;
-  line-height: 1.29;
 
   text-align: center;
 }
@@ -59,7 +58,6 @@
 
 .components-item .item-title {
   font-weight: 600;
-  line-height: 1.29;
 
   text-transform: uppercase;
 }
@@ -127,8 +125,4 @@
 .components-thumb .scroll-thumb {
   max-height: 136px;
   overflow-y: scroll;
-}
-
-.thumb-description {
-  line-height: 1.29;
 }
