@@ -1,71 +1,82 @@
-<section class="top-sellers section">
+<section class="top-sellers">
     <div class="container">
-        <h2 class="top-sellers-title"> <span class="akcent-title">TOP</span> SELLERS</h2>
+        <h2 class="top-sellers-title"> <span class="akcent-title">top</span> sellers</h2>
         <ul class="top-sellers-list list">
-            <li class="top-sellers-showcase"> <img
-                    srcset="../img/top-sellers/nut-desktop.jpg 1x,../img/top-sellers/nut-desktop@2x.jpg 2x "
+            <li class="top-sellers-showcase"> <img srcset="../img/top-sellers/nut-desktop@2x.jpg 2x "
                     src="../img/top-sellers/nut-desktop.jpg" alt="black chocolate, coffee & nuts" width="368"
-                    height="464"> </li>
-            <p class="top-sellers-comment">Crazy enough chocolate originates from a bean just like the coffee bean
-                called Cacao. Cacao has been
-                around for thousands of years and was first discovered by the Native American tribe called the Mayans.
-            </p>
-            <li class="top-sellers-showcase"> <img
-                    srcset="../img/top-sellers/chocolate-desktop.jpg 1x,../img/top-sellers/chocolate-desktop@2x.jpg"
+                    height="464">
+                <p class="top-sellers-comment">Crazy enough chocolate originates from a bean just like the coffee bean
+                    called Cacao. Cacao has been
+                    around for thousands of years and was first discovered by the Native American tribe called the
+                    Mayans.
+                </p>
+            </li>
+
+            <li class="top-sellers-showcase"> <img srcset="../img/top-sellers/chocolate-desktop@2x.jpg"
                     src="../img/top-sellers/chocolate-desktop.jpg" alt="milk chocolate with caramel, mint & cinnamon"
                     width="368" height="464">
             </li>
-            <li class="top-sellers-showcase-candy"> <img
-                    srcset="../img/top-sellers/candy-desktop.jpg 1x, ../img/top-sellers/candy-desktop@2x.jpg"
+            <li class="top-sellers-showcase-candy"> <img srcset="../img/top-sellers/candy-desktop@2x.jpg"
                     src="../img/top-sellers/candy-desktop.jpg" alt="black & milk chocolate" width="368" height="464">
             </li>
-
-            <button type="button" class="orange-button" data-modal-open>Buy now</button>
         </ul>
+        <button type="button" class="orange-button" data-modal-open>Buy now</button>
     </div>
 </section>
+
 <!-- Modal -->
-<div class="backdrop is-hidden" data-modal>
-    <div class="order-modal">
-        <button type="button" class="order-close" data-modal-close>
-            <svg class="modal-close-icon">
+<div class="top-sellers-backdrop is-hidden" data-modal>
+    <div class="order-modal_window">
+        <button type="button" class="order-modal_window-close" data-modal-close>
+            <svg class="order-modal_window-close-icon">
                 <use href="../img/sprite.svg#close"></use>
             </svg>
         </button>
-        <h3 class="order-modal-title"> <span class="akcent-title">BUY</span> NOW</h3>
-        <form class="order-modal-form">
-            <div class="order-form-field">
-                <div class="order-swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="order-swiper-slide"><img
-                            srcset="../img/buy-now/chocolate-desktop.jpg 1x, ../img/buy-now/chocolate-desktop@2x.jpg 2x"
+        <h3 class="order-modal-title"><span class="akcent-title">Buy</span> now</h3>
+
+        <div class="order-swiper order-slider">
+
+            <div class="order-swiper-wrapper">
+
+                <div class="order-swiper-slide">
+
+                    <div class="order-slider-image">
+                        <img class="slider-demonstrate" srcset="../img/buy-now/chocolate-desktop@2x.jpg 2x"
                             src="../img/buy-now/chocolate-desktop.jpg"
                             alt="kinder-chocolate-white-chocolate-chocolate-nuts" width="167" height="148">
-                        <button type="button" class="weight-selection-button">100g</button>
                     </div>
-                    <div class="order-swiper-slide"><img
-                            srcset="../img/buy-now/chocolate-white-desktop.jpg 1x, ../img/buy-now/chocolate-white-desktop@2x.jpg 2x"
+
+                    <button type="button" class="weight-selection-button">100g</button>
+                </div>
+                <div class="order-swiper-slide">
+                    <div class="order-slider-image"><img class="slider-demonstrate"
+                            srcset="../img/buy-now/chocolate-white-desktop@2x.jpg 2x"
                             src="../img/buy-now/chocolate-white-desktop.jpg"
-                            alt="white-chocolate-cocoa-bean-chocolate-cake" width="167" height="148"> <button
-                            type="button" class="weight-selection-button">200g</button>
-                    </div>
-                    <div class="order-swiper-slide"><img
-                            srcset="../img/buy-now/chocolate-bar-desktop.jpg 1x, ../img/buy-now/chocolate-bar-desktop@2x.jpg 2x"
+                            alt="white-chocolate-cocoa-bean-chocolate-cake" width="167" height="148"></div> <button
+                        type="button" class="weight-selection-button">200g</button>
+                </div>
+                <div class="order-swiper-slide">
+                    <div class="order-slider-image"><img class="slider-demonstrate"
+                            srcset="../img/buy-now/chocolate-bar-desktop@2x.jpg 2x"
                             src="../img/buy-now/chocolate-bar-desktop.jpg" alt="dark-chocolate" width="167"
-                            height="148"> <button type="button" class="weight-selection-button">300g</button>
-                    </div>
+                            height="148"></div>
+                    <button type="button" class="weight-selection-button">300g</button>
                 </div>
             </div>
+        </div>
+        <form class="order-modal-form">
             <div class="customer-form-field">
                 <div class="form-field">
-                    <label for="personal information" class="customer-form-label">Personal information
+                    <label for="name" class="customer-form-label">Personal information
                         <input type="text" class="customer-form-input" name="name" id="name" placeholder="Name" />
+                    </label>
+                    <label for="surname" class="customer-form-label">
                         <input type="text" class="customer-form-input" name="surname" id="surname"
                             placeholder="Surname" />
                     </label>
                 </div>
                 <div class="form-field">
-                    <label for="mail" class="form-label">Email
+                    <label for="mail" class="customer-form-label">Email
                         <input type="email" class="customer-form-input" name="mail" id="mail"
                             placeholder="Enter your email" />
                     </label>
@@ -73,32 +84,37 @@
                 <div class="form-field">
                     <label for="phone" class="customer-form-label">Phone number
                         <span class="country-code">
-                            <input type="phone" class="customer-form-input" name="phone" id="phone"
+                            <input type="tel" class="customer-form-input_for-number" name="phone" id="phone"
                                 placeholder="Phone number" />
-                            <svg class="flag-icon" width="" height="">
-                                <use href=""></use>
+                            <svg class="flag-icon" width="24" height="18">
+                                <use href="../img/sprite.svg#flag-ua"></use>
                             </svg>
                         </span>
                     </label>
                 </div>
                 <div class="form-field">
                     <label for="number" class="customer-form-label">Card number
-                        <input type="number" class="customer-form-input" name="number" id="number"
-                            placeholder="Enter  card" />
-                        <svg class="mastercard-icon" width="" height="">
-                            <use href=""></use>
-                        </svg>
+                        <span class="card-code">
+                            <input type="number" class="customer-form-input" name="number" id="number"
+                                placeholder="Enter card" />
+                            <svg class="mastercard-icon" width="22" height="13">
+                                <use href="../img/sprite.svg#mastercard"></use>
+                            </svg>
                         </span>
                     </label>
                 </div>
                 <div class="form-field">
-                    <label for="comment" class="comment">Comment</label>
-                    <textarea class="comment-input" name="comment" id="comment" rows=""
-                        placeholder=" Enter text"></textarea>
+                    <label for="comment" class="customer-form-label">Comment</label>
+                    <textarea class="comment-input" name="comment" id="comment" rows="2"
+                        placeholder="Enter text"></textarea>
                 </div>
                 <div class="button-field">
-                    <button type="submit" class="modal-orange-button" width="" height="">
+                    <button type="submit" class="modal-orange-button">
                         Submit
                     </button>
                 </div>
             </div>
+        </form>
+
+    </div>
+</div>

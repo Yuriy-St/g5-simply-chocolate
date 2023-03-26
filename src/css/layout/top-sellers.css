@@ -2,22 +2,20 @@
     --primary-text-color: #111111;
     --secondary-text-color: #FFFFFF;
     --primary-brand-color: #FD9222;
+    --secondary-brand-color: #FCF1E0;
     --light-background-color: #E2E2E2;
     --dark-background-color: #1E1823;
     --modal-order-button-color: #FAFAFA;
 }
-
-
-
 
 /* .container {
     width: 100%;
     max-width: 375px;
     padding: 0 20px;
     margin: 0 auto;
-}
+} */
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .container {
         padding: 0 32px;
         max-width: 768px;
@@ -29,7 +27,6 @@
         max-width: 1136px;
     }
 } */
-
 
 .top-sellers {
     padding-top: 72px;
@@ -91,7 +88,7 @@
     border: none;
 }
 
-.backdrop {
+.top-sellers-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -117,23 +114,35 @@
     }
 } */
 
-.backdrop.is-hidden {
+/* .top-sellers-backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-}
+} */
 
-.order-modal {
-    position: relative;
-
-}
-
-.order-close {
+.order-modal_window {
     position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 24px;
-    height: 24px;
-    background-color: #e7e9fc;
+    padding-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+    min-width: 311px;
+    height: fit-content;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    background: var(--modal-order-button-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+
+}
+
+.order-modal_window-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
     border: none;
     border-radius: 50%;
     margin: 0;
@@ -143,25 +152,22 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon {
+.order-modal_window-close-icon {
     display: block;
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     fill: currentColor;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-    color: #e7e9fc;
-    background-color: var(--primary-text-color);
+.order-modal_window-close-icon:hover,
+.order-modal_window-close-icon:focus {
+    color: var(--primary-brand-color);
+
 }
-
-
-
 
 .order-modal-title {
     margin-top: 0;
@@ -172,51 +178,187 @@
     line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--primary-text-color);
 }
 
 .akcent-title {
     color: var(--primary-brand-color);
 }
 
-.order-modal-form {
-    width: 311px;
-    height: 1007px;
-    background: #FAFAFA;
-    border-radius: 15px;
-    border-radius: 15px;
+.order-swiper {
+    display: block;
+    width: 231px;
+    height: 257px;
 }
 
-.order-form-field {}
+.order-slider {
+    padding: 30 px 0 70px 0;
+}
 
-.order-swiper-wrapper {
+.order-swiper-slide {
+    position: absolute;
+    width: 231px;
+    height: 284px;
+    left: 40px;
+    top: 88px;
+}
+
+.order-slider-image .slider-demonstrate {
+    max-width: 100%;
+
+}
+
+.weight-selection-button {
+    margin-top: 16px;
+    margin-bottom: 28px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px 27px;
+    gap: 14px;
+    position: absolute;
+    width: 96px;
+    height: 33px;
+    left: 67px;
+    top: 196px;
+    background: var(--modal-order-button-color);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
 }
 
-.order-swiper-slide {}
+.order-slider .swiper-pagination {
+    bottom: 0;
+
+}
+
+.order-slider .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background-color: var(--primary-brand-color);
+    background: rgba(17, 17, 17, 0.553);
+}
+
+.order-slider .swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    border-radius: 32px;
+    background: #FD9222;
+}
+
+
+.order-modal-form {
+    position: relative;
+    top: 32px;
+}
 
 .customer-form-field {
     flex-direction: column;
 }
 
-.form-field {}
+.form-field {
+    width: 100%;
+    margin-bottom: 18px;
+}
 
-.customer-form-label {}
+.customer-form-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
+}
 
-.customer-form-input {}
+.customer-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 18px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.country-code {}
+.customer-form-input:focus {
+    outline: none;
+    border-color: var(--primary-brand-color);
+}
 
-.flag-icon {}
+.customer-form-input_for-number {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 106px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.mastercard-icon {}
+.customer-form-input_for-number:focus {
+    outline: none;
+    border-color: var(--primary-brand-color);
+}
+
+.country-code {
+
+    margin-top: 4px;
+    display: block;
+    position: relative;
+}
+
+.flag-icon {
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 18px;
+}
+
+.card-code {
+
+    margin-top: 4px;
+    display: block;
+    position: relative;
+
+}
+
+.mastercard-icon {
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 16px;
+}
 
 .comment {}
 
-.comment-input {}
+.comment-input {
+    resize: none;
+    padding: 8px 16px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: var(--text-color);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-input:focus {
+    outline: none;
+    border-color: var(--primary-btn-color);
+}
 
 .modal-orange-button {
-    margin-top: 20px;
+    margin-top: 18px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
