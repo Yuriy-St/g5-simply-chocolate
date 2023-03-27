@@ -26,6 +26,8 @@
   transform: translate(-50%, -50%);
 
   width: 80px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .reviews-item-title {
@@ -81,7 +83,7 @@
 }
 
 .reviews__item {
-  margin-top: 40px;
+  padding-top: 40px;
 }
 
 .reviews__box {
