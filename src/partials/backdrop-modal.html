@@ -11,7 +11,7 @@
       <span class="modal-title-brand">our chocolate</span>
     </h2>
 
-    <form class="reviews-modal-form" name="reviews">
+    <form class="reviews-modal-form" name="reviews" id="test">
       <div class="reviews-modal-wrapper">
         <label class="visually-hidden" for="name">Name</label>
         <input
@@ -64,8 +64,34 @@
         placeholder="Enter text"
       ></textarea>
 
-      <button type="submit" class="review-modal-button">Send</button>
+      <button
+        type="submit"
+        class="review-modal-button js-open-modal review-button"
+        data-modal="2"
+      >
+        Send
+      </button>
     </form>
+  </div>
+
+  <!-- review modal - 2 -->
+  <div
+    class="reviews-feedback-modals general-modals modal modal2"
+    data-modal="2"
+  >
+    <button class="reviews-feedback-button-close modal-close js-modal-close">
+      <svg class="reviews-feedback-modal-icon">
+        <use href="../img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="reviews-feedback-content">
+      <h2 class="reviews-feedback-modal-title">
+        thank you <span>for your feedback!</span>
+      </h2>
+      <p class="reviews-feedback-modal-text">
+        We are so happy to hear from you!
+      </p>
+    </div>
   </div>
 
   <!-- put your modals in here -->

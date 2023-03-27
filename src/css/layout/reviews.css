@@ -101,7 +101,7 @@
   border-radius: 15px;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 375px) {
   .reviews__box {
     width: 335px;
   }
@@ -261,7 +261,14 @@
   }
 }
 
-.reviews-modal-input:hover,
+.reviews-modal-input:hover {
+  border: 1.5px solid var(--primary-brand-color);
+}
+
+.reviews-modal-input:focus {
+  border: 1.5px solid var(--primary-brand-color);
+}
+
 .reviews-modal-input:active {
   border: 1.5px solid var(--primary-brand-color);
 }
@@ -382,4 +389,77 @@
   .review-modal-button {
     padding: 14px 40px;
   }
+}
+
+/* Feedback modal */
+.reviews-feedback-modals {
+  width: 311px;
+  height: 350px;
+  padding-top: 84px;
+  padding-left: 58px;
+  letter-spacing: -0.02em;
+
+  background-color: var(--primary-brand-color);
+  background-image: url('./background-mobile.png');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-feedback-modals {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 517px;
+    height: 414px;
+    padding: 0;
+    padding-right: 50px;
+
+    background-image: url('./background-desktop.png');
+  }
+}
+
+.reviews-feedback-button-close {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--inverted-text-color);
+}
+
+.reviews-feedback-modal-icon {
+  height: 14px;
+  fill: #d44528;
+}
+
+.reviews-feedback-content {
+  width: 232px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-feedback-content {
+    width: 297px;
+  }
+}
+
+.reviews-feedback-modal-title {
+  margin-bottom: 8px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-transform: uppercase;
+  color: var(--secondary-brand-color);
+}
+
+.reviews-feedback-modal-title span {
+  display: block;
+}
+
+.reviews-feedback-modal-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14x;
+
+  color: #ffffff;
 }
