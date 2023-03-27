@@ -5,4 +5,5 @@
 */
 @import url('./fonts.css');
 @import url('./variables.css');
+@import url('./is-hidden.css');
 @import url('./visually-hidden.css');
