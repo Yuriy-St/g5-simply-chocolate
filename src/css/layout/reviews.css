@@ -170,39 +170,31 @@
   margin-right: 0;
 }
 
-/* modal */
-
-.backdrop-reviews {
-  background: rgba(46, 47, 66, 0.4);
-  height: 1000px;
-  padding: 50px;
-}
-.reviews-modal {
-  position: relative;
+/* reviews modal styles */
+.reviews-modals {
   width: 311px;
   padding: 32px 24px;
-
-  background: #fafafa;
-  border-radius: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .reviews-modals {
+    width: 517px;
+    padding: 40px;
+  }
+}
+
+/* reviews close button */
 .reviews-button-close {
-  position: absolute;
-  right: 14px;
-  top: 14px;
-
-  background-color: transparent;
-  line-height: 0;
-}
-
-.js-modal-close {
+  width: 24px;
+  height: 24px;
 }
 
 .reviews-modal-icon {
+  height: 21px;
 }
 
 .reviews-modal-title {
-  width: 250px;
+  width: 100%;
   margin-bottom: 32px;
   font-weight: 600;
   font-size: 20px;
@@ -213,15 +205,35 @@
   color: var(--primary-text-color);
 }
 
-.reviews-modal-title span {
+.modal-title-fix {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-title-fix {
+    display: inline;
+  }
+}
+
+.reviews-modal-title .modal-title-brand {
   color: var(--primary-brand-color);
 }
 
-.reviews-modal-form {
+@media screen and (min-width: 768px) {
+  .modal-title-brand {
+    display: block;
+  }
 }
 
 .reviews-modal-wrapper {
   margin-bottom: 14px;
+  /* filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03)); */
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-modal-wrapper {
+    margin-bottom: 19px;
+  }
 }
 
 .reviews-modal-input {
@@ -229,15 +241,29 @@
   padding-left: 18px;
   padding-bottom: 14px;
   padding-top: 14px;
-  /* margin-bottom: 14px; */
 
   color: #000000;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
 
-  /* transition-property: color, border-color;
+  transition-property: color, border-color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-modal-input {
+    padding-bottom: 22px;
+    padding-top: 22px;
+    padding-left: 24px;
+
+    font-size: 18px;
+  }
+}
+
+.reviews-modal-input:hover,
+.reviews-modal-input:active {
+  border: 1.5px solid var(--primary-brand-color);
 }
 
 .reviews-modal-input::placeholder {
@@ -246,6 +272,14 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+
+@media screen and (min-width: 768px) {
+  .reviews-modal-input::placeholder {
+    font-size: 18px;
+    line-height: 1.21;
+  }
+}
+
 .reviews-modal-textarea {
   display: block;
   width: 100%;
@@ -264,8 +298,22 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
+@media screen and (min-width: 768px) {
+  .reviews-modal-textarea {
+    min-height: 137px;
+    font-size: 18px;
+  }
+}
+
 .reviews-modal-textarea::placeholder {
   color: rgba(64, 64, 64, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-modal-textarea::placeholder {
+    font-size: 18px;
+  }
 }
 
 .review-modal-phone-wrapper {
@@ -276,6 +324,13 @@
 
 .phone-input {
   padding-left: 106px;
+}
+
+@media screen and (min-width: 768px) {
+  .phone-input {
+    padding-left: 177px;
+    font-size: 18px;
+  }
 }
 
 .phone-inner {
@@ -291,8 +346,15 @@
   border-right: 1.5px solid rgba(17, 17, 17, 0.05);
 }
 
+@media screen and (min-width: 768px) {
+  .phone-inner {
+    border-right: 3px solid rgba(17, 17, 17, 0.1);
+  }
+}
+
 .phone-inner-icon {
   width: 24px;
+  height: 24px;
 }
 
 .phone-inner-code {
@@ -302,9 +364,22 @@
   margin: 0 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .phone-inner-code {
+    font-size: 18px;
+    margin: 0 32px 0 18px;
+  }
+}
+
 .review-modal-button {
   padding: 12px 28px;
   border-radius: 100px;
   background-color: var(--primary-brand-color);
-  color: #ffffff;
+  color: var(--inverted-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .review-modal-button {
+    padding: 14px 40px;
+  }
 }

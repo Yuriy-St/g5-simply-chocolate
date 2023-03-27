@@ -146,76 +146,8 @@
         </div>
       </div>
     </div>
-    <button class="reviews-button" type="button">Leave a review</button>
-  </div>
-
-  <!-- in progress -->
-  <div class="backdrop-reviews">
-    <div class="reviews-modal modal modal1" data-modal="1">
-      <button class="reviews-button-close js-modal-close">
-        <svg width="13" height="13" class="reviews-modal-icon">
-          <use href="../img/sprite.svg#close"></use>
-        </svg>
-      </button>
-      <h2 class="reviews-modal-title">
-        Leave a review about <span>our chocolate</span>
-      </h2>
-
-      <form class="reviews-modal-form" name="reviews">
-        <div class="reviews-modal-wrapper">
-          <label class="visually-hidden" for="name">Name</label>
-          <input
-            id="name"
-            class="reviews-modal-input"
-            type="text"
-            name="name"
-            placeholder="Name"
-            required
-          />
-        </div>
-
-        <div class="reviews-modal-wrapper">
-          <label class="visually-hidden" for="email">Email</label>
-          <input
-            id="email"
-            class="reviews-modal-input"
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-        </div>
-
-        <div class="reviews-modal-wrapper review-modal-phone-wrapper">
-          <label class="visually-hidden" for="phone">Phone number</label>
-          <input
-            id="phone"
-            class="reviews-modal-input phone-input"
-            type="number"
-            name="phone"
-            placeholder="Phone number"
-            required
-          />
-
-          <div class="phone-inner">
-            <svg class="phone-inner-icon">
-              <use href="../img/sprite.svg#flag-ua"></use>
-            </svg>
-            <span class="phone-inner-code">+380</span>
-          </div>
-        </div>
-
-        <label class="visually-hidden" for="phone">Your review</label>
-        <textarea
-          id="review-about"
-          class="reviews-modal-textarea"
-          type="text"
-          name="review-about"
-          placeholder="Enter text"
-        ></textarea>
-
-        <button type="submit" class="review-modal-button">Send</button>
-      </form>
-    </div>
+    <button class="reviews-button js-open-modal" type="button" data-modal="1">
+      Leave a review
+    </button>
   </div>
 </section>
