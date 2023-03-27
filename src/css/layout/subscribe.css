@@ -1,22 +1,3 @@
-:root {
-    /* чорний текст, icon */
-    --primary-text-color: #111111;
-    /* білий текст */
-    --secondary-text-color: #FFFFFF;
-    /* оранжевий текст, кнопка */
-    --primary-brand-color: #FD9222;
-    /* фон кнопки у ховері */
-    --secondary-brand-color: #FCF1E0;
-
-    /* сірий фон */
-    --light-background-color: #E2E2E2;
-    /* темно фіолетовий фон */
-    --dark-background-color: #1E1823;
-
-    /* ще якийсь білий колір з макету */
-    --modal-order-button-color: #FAFAFA;
-}
-
 .subscribe {
     display: block;
     text-align: center;
