@@ -154,6 +154,16 @@
 
   max-height: 146px;
   overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+.components-thumb .scroll-thumb::-webkit-scrollbar {
+  width: 2px;
+}
+
+.components-thumb .scroll-thumb::-webkit-scrollbar-thumb {
+  background-color: var(--placeholder-text-color);
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 768px) {
