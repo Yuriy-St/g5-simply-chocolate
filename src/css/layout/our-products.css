@@ -1,9 +1,20 @@
-a {
-  text-decoration: none;
-}
 .our-products {
   background-color: var(--light-background-color);
+  margin-bottom: 105px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-products {
+    margin-bottom: 145px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-products {
+    margin-bottom: 173px;
+  }
+}
+
 .o_p-title {
   font-weight: 600;
   font-size: 24px;
@@ -22,18 +33,23 @@ a {
 .o_p-title > span {
   color: var(--primary-text-color);
 }
-/* .o_p-list {
+.o_p-list {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  gap: 18px;
-} */
+}
+
 .o_p-item {
   background-color: var(--inverted-text-color);
-  padding: 20px 32px;
+  padding: 32px 20px;
   border: 1px solid var(--light-stroke-color);
   border-radius: 15px;
   margin: 0 9px;
-  width: 270px;
-  height: 364px;
+  width: 100%;
+  height: 100%;
+}
+.slick__box {
+  margin: 0 auto;
 }
 .o_p-card-block {
   text-align: center;
@@ -62,76 +78,8 @@ a {
   color: var(--primary-text-color);
   margin-top: 18px;
 
-  background: #fafafa;
+  background: var(--light-background-color);
   border: 1px solid var(--light-stroke-color);
   border-radius: 100px;
   padding: 8px 20px;
-}
-/* Slider */
-
-.slick__list {
-  width: 100%;
-  /* max-width: 1136px; */
-  margin: 0 auto;
-  display: flex;
-}
-/* .slick__item {
-  margin: 15px;
-} */
-.slick__box {
-  margin: 0 auto;
-}
-.o_p-list .slick-dots li.slick-active button:before {
-  font-size: 20px;
-  border-radius: 50%;
-  color: var(--primary-brand-color);
-  content: '♥';
-}
-
-/* .slick-slide {
-} */
-.my-slick-prev,
-.my-slick-next {
-  position: absolute;
-  bottom: -40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  width: 50px;
-  height: 40px;
-  cursor: pointer;
-
-  border: none;
-
-  background-color: transparent;
-}
-.my-slick-prev {
-  left: 50px;
-}
-
-@media screen and(min-width: 768px) {
-  .my-slick-prev {
-    left: 250px;
-  }
-}
-@media screen and(min-width: 1200px) {
-  .my-slick-prev {
-    left: 350px;
-  }
-}
-
-.my-slick-next {
-  right: 50px;
-}
-@media screen and(min-width: 768px) {
-  .my-slick-next {
-    right: 250px;
-  }
-}
-@media screen and(min-width: 1200px) {
-  .my-slick-next {
-    right: 350px;
-  }
 }
