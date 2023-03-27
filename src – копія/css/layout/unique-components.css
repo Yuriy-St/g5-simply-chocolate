@@ -31,12 +31,28 @@
   color: var(--primary-brand-color);
 }
 
+@media screen and (min-width: 768px) {
+  .unique-components .section-title {
+    margin: 0 auto 28px;
+    max-width: 411px;
+
+    font-size: 24px;
+    line-height: 1.7;
+  }
+}
+
 .unique-text {
   margin: 0 auto 32px;
 
   max-width: 486px;
 
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .unique-text {
+    margin: 0 auto 50px;
+  }
 }
 
 .components-list {
@@ -46,15 +62,40 @@
   row-gap: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .components-list {
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .components-list {
+    gap: 19px;
+  }
+}
+
 .components-item {
   position: relative;
 
   overflow: hidden;
   padding: 28px;
+  /* height: 270px; */
 
   background-color: var(--inverted-text-color);
   border: 1px solid var(--primary-brand-color);
   border-radius: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .components-item {
+    max-width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .components-item {
+    max-width: calc((100% - 19px * 3) / 4);
+  }
 }
 
 .components-item:first-child {
@@ -80,6 +121,12 @@
 
 .components-item .picture-box {
   margin: 0 28px 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  .components-item .picture-box {
+    margin: 0 12px 36px 0;
+  }
 }
 
 .components-item .item-title {
@@ -156,41 +203,7 @@
   overflow-y: scroll;
 }
 
-@media screen and (min-width: 768px) {
-  .unique-components .section-title {
-    margin: 0 auto 28px;
-    max-width: 411px;
-
-    font-size: 24px;
-    line-height: 1.7;
-  }
-
-  .unique-text {
-    margin: 0 auto 50px;
-  }
-
-  .components-list {
-    gap: 32px;
-  }
-
-  .components-item {
-    max-width: calc((100% - 32px) / 2);
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .components-list {
-    gap: 19px;
-  }
-
-  .components-item {
-    max-width: calc((100% - 19px * 3) / 4);
-  }
-
-  .components-item .picture-box {
-    margin: 0 12px 36px 0;
-  }
-
   .last.components-thumb .scroll-thumb {
     max-height: 110px;
   }

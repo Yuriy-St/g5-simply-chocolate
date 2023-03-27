@@ -1,0 +1,21 @@
+.button-brand {
+  border-radius: 999em;
+  padding: 12px 28px;
+  background-color: var(--primary-brand-color);
+  font-weight: 600;
+  color: var(--white-color);
+  transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+}
+
+.button-brand:hover,
+.button-brand:focus {
+  background-color: var(--secondary-brand-color);
+  color: var(--primary-brand-color);
+}
+
+@media screen and (min-width: 768px) {
+  .button-brand {
+    padding: 14px 40px;
+  }
+}
