@@ -9,7 +9,7 @@
                 </svg></a>
         </div>
 
-        <div class="nav-menu-header">
+        <div class="nav-menu-header js-menu-container">
             <ul class="nav-list-header list">
                 <li class="nav-item-header">
                     <a class="nav-link-header link" href="#header">Home</a>
@@ -32,6 +32,7 @@
                 </li>
             </ul>
 
+
             <ul class="social-list-header list">
                 <li class="social-item-header">
                     <a class="social-link-header link" href="https://www.instagram.com/">
@@ -50,14 +51,16 @@
                 </li>
             </ul>
 
-            <button class="menu-btn-close" type="button">
+
+            <button class="menu-btn-close menu-toggle js-close-menu" type="button">
                 <svg class="menu-icon-close" width="28" height="28">
                     <use href="../img/sprite.svg#close"></use>
                 </svg>
             </button>
         </div>
 
-        <button class="menu-btn-open" type="button">
+        <button class="menu-btn-open menu-toggle js-open-menu" type="button" aria-expanded="false"
+            aria-controls="mobile-menu">
             <svg class="menu-icon-open" width="28" height="28">
                 <use href="../img/sprite.svg#burger"></use>
             </svg>
