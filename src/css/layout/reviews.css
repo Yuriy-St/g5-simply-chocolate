@@ -3,11 +3,6 @@
   background-color: #fafafa;
 }
 
-/* fix padding */
-.reviews-container {
-  padding: 0;
-}
-
 .reviews-title {
   margin-bottom: 32px;
   text-transform: uppercase;
