@@ -12,26 +12,34 @@
     <!-- Модальное окно в subscribe "Explore our new chocolate first"-->
     <!--<div class="backdrop is-hidden" data-modal>-->
         <div class="subscribe-modal modal">
-            <img srcset="img/explore/review-mobile.jpg   300w,
-                         img/explore/review-desktop.jpg   768w" 
-                 alt="Chocolate" 
-                 class="subscribe-modal-img">
+            
+            <picture class="subscribe-modal-img">
+                <source srcset="
+                            ../img/explore/review-desktop.jpg  1x,
+                            ../img/explore/review-desktop@2x.jpg  2x" 
+                        media="(min-width: 768px)" >
+                <img srcset="
+                            ../img/explore/review-mobile.jpg  1x,
+                            ../img/explore/review-mobile@2x.jpg  2x" 
+                        src="../img/explore/review-mobile.jpg" 
+                        alt="Chocolate" >
+            </picture>
+            
             <h3 class="form-title">Explore our<br><span>new chocolate</span> first!</h3>
-            <div class="submit-form">
                 <form class="submit-form" name="submit-form" autocomplete="on">
                     <div class="submit-form-input">
                         <input class="foot-input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
-                           placeholder="Enter your email" required />
-                    </div>
+                           placeholder="Enter your email" required >
                 
-                    <button class="submit-btn" type="submit" data-modal-open>Submit</button>
-            </div>
-                <button class="close" type="button" data-modal-close>
-                    <svg class="close-icon">
-                        <use href="../img/sprite.svg#close"></use>
-                    </svg>
-                </button>
-            </form>
+                        <button class="submit-btn" type="submit" data-modal-open>Submit</button>
+                    </div>
+
+                    <button class="close" type="button" data-modal-close>
+                        <svg class="close-icon">
+                            <use href="../img/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </form>
         </div>
     <!--</div>-->
 
