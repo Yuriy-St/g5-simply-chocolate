@@ -2,7 +2,7 @@
   /* брендовий текст, кнопка, hover */
   --primary-brand-color: #fd9222;
   /* ховер на кнопку, елементи модалок */
-  --secondary-brand-color: rgba(252, 241, 224, 1);
+  --secondary-brand-color: #fcf1e0;
   /* чорний текст, icon */
   --primary-text-color: #111111;
   /* білий текст */
@@ -14,9 +14,11 @@
   /* текст в інпут-плейсхолдерах */
   --placeholder-text-color: rgba(64, 64, 64, 0.3);
   /* сірий фон */
-  --light-background-color: #e2e2e2;
+  --light-background-color: #fafafa;
   /* темно фіолетовий фон */
   --dark-background-color: #1e1823;
   /* ще якийсь білий колір з макету */
   --white-color: #fafafa;
+  /* стандартний час і функція для транзишинів */
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
