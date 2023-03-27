@@ -190,6 +190,9 @@
   position: absolute;
   right: 14px;
   top: 14px;
+
+  background-color: transparent;
+  line-height: 0;
 }
 
 .js-modal-close {
@@ -279,18 +282,23 @@
   position: absolute;
   display: flex;
   align-items: center;
+  height: 25px;
 
-  /* width: 74px; */
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 18px;
+
   border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+
+.phone-inner-icon {
+  width: 24px;
 }
 
 .phone-inner-code {
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   margin: 0 8px;
 }
 
