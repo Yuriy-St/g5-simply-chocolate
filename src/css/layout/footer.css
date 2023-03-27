@@ -15,13 +15,11 @@
     }
 
     .foot-title {
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 500;
         font-size: 24px;
         line-height: 1.17;
         letter-spacing: -0.02em;
-        color: var(--secondary-text-color);
+        color: var(--inverted-text-color);
     }
 
     .social-list {
@@ -32,7 +30,7 @@
     .social-icon {
         width: 22px;
         height: 22px;
-        fill: var(--secondary-text-color);
+        fill: var(--inverted-text-color);
     }
 
     .foot-div::after {
@@ -73,13 +71,11 @@
     }
 
     .foot-title {
-        font-family: 'Montserrat';
-        font-style: normal;
         font-weight: 500;
         font-size: 28px;
         line-height: 1.21;
         letter-spacing: -0.02em;
-        color: var(--secondary-text-color);
+        color: var(--inverted-text-color);
     }
 
     .foot-div {
@@ -96,7 +92,7 @@
     .social-icon {
         width: 24px;
         height: 24px;
-        fill: var(--secondary-text-color);
+        fill: var(--inverted-text-color);
     }
 
     .foot-without-nav::after {
@@ -140,7 +136,7 @@
 
 .footer {
     background-color: var(--dark-background-color);
-    color: var(--secondary-text-color);
+    color: var(--inverted-text-color);
 }
 
 .foot-title span {
@@ -149,13 +145,11 @@
 
 .address-title {
     margin-bottom: 14px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
     text-align: left;
-    color: var(--secondary-text-color);
+    color: var(--inverted-text-color);
 }
 
 .address-list {
@@ -167,15 +161,13 @@
 }
 
 .address-link {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     text-align: left;
     letter-spacing: -0.02em;
     text-decoration: none;
-    color: var(--secondary-text-color);
+    color: var(--inverted-text-color);
 }
 
 .social-icon:hover {
@@ -183,12 +175,10 @@
 }
 
 .nav-link {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
-    color: var(--secondary-text-color);
+    color: var(--inverted-text-color);
     text-decoration: none;
 }

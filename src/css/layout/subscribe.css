@@ -2,11 +2,11 @@
     display: block;
     text-align: center;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(../img/subscribe/subcribe-mobile.jpg);
+        url(./img/subscribe/subcribe-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--dark-background-color);
-    color: var(--secondary-text-color);
+    color: var(--inverted-text-color);
 }
 
 .subscribe-div {
@@ -14,8 +14,6 @@
 }
 
 .subscribe .section-title {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -26,8 +24,6 @@
 
 .subscribe .text {
     max-width: 326px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
@@ -37,8 +33,6 @@
 }
 
 .subscribe-div .button {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;  
@@ -46,7 +40,7 @@
     border-radius: 100px;
     text-align: center;
     background-color: var(--primary-brand-color);
-    color: var(--secondary-text-color);
+    color: var(--inverted-text-color);
     align-items: center;
     width: 128px;
     height: 41px;
@@ -62,7 +56,7 @@
 @media (min-width: 768px) {
     .subscribe {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(../img/subscribe/subcribe-tablet.jpg);
+            url(./img/subscribe/subcribe-tablet.jpg);
     }
 
     .subscribe-div {
@@ -91,7 +85,7 @@
 @media (min-width: 1200px) {
     .subscribe {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(../img/subscribe/subcribe-desktop.jpg);
+            url(./img/subscribe/subcribe-desktop.jpg);
     }
 }
 
@@ -128,17 +122,17 @@
      max-width: 311px;
      height: 350px;
      /*padding: 72px 24px 24px 24px;*/
-     background: var(--modal-order-button-color);
+     background: var(--inverted-text-color);
      border-radius: 15px;
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
  }
 
+
 .subscribe-modal-img {
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    height: 169px;
 }
 
 .form-title {
@@ -162,9 +156,7 @@
 
 .submit-btn {
     position: absolute;
-    right: 24px;
-    font-family: 'Montserrat';
-    font-style: normal;
+    right: 0px;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
@@ -172,7 +164,7 @@
     border-radius: 100px;
     text-align: center;
     background-color: var(--primary-brand-color);
-    color: var(--secondary-text-color);
+    color: var(--inverted-text-color);
     align-items: center;
     width: 100px;
     height: 45px;
@@ -188,13 +180,12 @@
 .foot-input {
     position: relative;
     width: 263px;
+    /*width: 100%;*/
     height: 45px;
     border-radius: 100px;
-    /*border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;*/
-    border: 1px solid var(--light-background-color);
+    border: 1px solid var(--light-stroke-color);
     margin-left: 24px;
-    margin-right: 24px;
+    /*margin-right: 24px;*/
 }
 
 ::placeholder {
@@ -222,7 +213,7 @@
 .submit-form .close-icon {
     width: 24px;
     height: 24px;
-    fill: var(--secondary-text-color);
+    fill: var(--inverted-text-color);
 }
 
 .submit-form .close:hover .close-icon {
@@ -236,10 +227,6 @@
         height: 412px;
     }
 
-    .subscribe-modal-img {
-        height: 196px;
-    }
-
     .form-title {
         font-size: 24px;
         line-height: 1.17;
@@ -248,7 +235,7 @@
 
     .submit-btn {
         position: absolute;
-        right: -120px;
+        right: -144px;
         width: 137px;
         height: 52px;
     }
