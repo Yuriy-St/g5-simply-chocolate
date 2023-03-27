@@ -1,0 +1,76 @@
+.hero {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1136px;
+  }
+}
+
+.hero-bg {
+  background-color: var(--dark-background-color);
+  background-image: url('../../img/hero/hero-desktop.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 395px;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-bg {
+    padding-top: 670px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-bg {
+    padding-top: 380px;
+  }
+}
+
+.hero-subtitle {
+  max-width: 484px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--white-color);
+  padding-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-subtitle {
+  }
+}
+
+.hero-footer {
+  color: var(--white-color);
+}
+
+.scroll-down {
+  display: flex;
+  align-items: center;
+}
+
+.scroll-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: var(--secondary-brand-color);
+  border-radius: 50%;
+}
+
+.icon-scroll-down {
+  width: 10px;
+}
