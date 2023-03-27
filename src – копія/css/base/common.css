@@ -1,8 +1,0 @@
-body {
-  background-color: var(--light-background-color);
-  font-size: 14px;
-  line-height: 1.29;
-  font-family: 'Montserrat';
-  letter-spacing: -0.02em;
-  color: var(--primary-text-color);
-}
