@@ -17,8 +17,8 @@
 
 .o_p-title {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-align: center;
   text-transform: uppercase;
@@ -27,6 +27,8 @@
 }
 @media screen and (min-width: 768px) {
   .o_p-title {
+    font-size: 24px;
+    line-height: 1.17;
     margin-bottom: 50px;
   }
 }
@@ -47,6 +49,18 @@
   margin: 0 9px;
   width: 100%;
   height: 100%;
+  transition: var(--transition-dur-and-func);
+}
+.o_p-item:hover {
+  background-color: var(--primary-brand-color);
+  cursor: pointer;
+}
+.o_p-item img {
+  transition: var(--transition-dur-and-func);
+}
+.o_p-item:hover img {
+  border: 0;
+  border-radius: 10px;
 }
 .slick__box {
   margin: 0 auto;
@@ -61,6 +75,10 @@
   text-transform: uppercase;
   margin-top: 8px;
   color: var(--primary-text-color);
+  transition: var(--transition-dur-and-func);
+}
+.o_p-item:hover .o_p-card-name {
+  color: var(--inverted-text-color);
 }
 .o_p-name-product {
   font-size: 12px;
@@ -68,8 +86,11 @@
   text-align: center;
   margin-top: 2px;
   color: var(--light-text-color);
+  transition: var(--transition-dur-and-func);
 }
-
+.o_p-item:hover .o_p-name-product {
+  color: var(--inverted-text-color);
+}
 .o_p-card-price {
   display: inline-block;
   font-weight: 600;
@@ -82,4 +103,42 @@
   border: 1px solid var(--light-stroke-color);
   border-radius: 100px;
   padding: 8px 20px;
+}
+/* Gallery */
+.hidden-scroll .sl-wrapper {
+  background-color: var(--light-text-color);
+}
+.hidden-scroll .sl-wrapper .sl-image .sl-caption {
+  font-family: 'Montserrat';
+  color: var(--inverted-text-color);
+  background: var(--primary-brand-color);
+  font-size: 18px;
+  border: 1px solid var(--primary-brand-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+.hidden-scroll .sl-wrapper .sl-image img {
+  border: 0 transparent;
+  border-radius: 10px;
+}
+.hidden-scroll .sl-wrapper .sl-close {
+  color: var(--dark-background-color);
+  transition: var(--transition-dur-and-func);
+}
+.hidden-scroll .sl-wrapper .sl-close:hover,
+.hidden-scroll .sl-wrapper .sl-close:focus {
+  color: var(--primary-brand-color);
+}
+
+.hidden-scroll .sl-wrapper .sl-navigation button {
+  color: var(--dark-background-color);
+  transition: var(--transition-dur-and-func);
+}
+.hidden-scroll .sl-wrapper .sl-navigation button:hover,
+.hidden-scroll .sl-wrapper .sl-navigation button:focus {
+  color: var(--primary-brand-color);
+}
+.hidden-scroll .sl-wrapper .sl-counter {
+  color: var(--dark-background-color);
 }
