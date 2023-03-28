@@ -1,12 +1,30 @@
-(() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-open]"),
-      closeModalBtn: document.querySelector("[data-modal-close]"),
-      modal: document.querySelector("[data-modal]"),
-    };
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-    function toggleModal() {
-        refs.modal.classList.toggle("is-hidden");
-    }
-})();
+// slider
+$('.responsive').slick({
+  prevArrow: false,
+  nextArrow: false,
+  dots: true,
+  infinite: false,
+  speed: 300,
+  adaptiveHeight: true,
+  slidesToScroll: 1,
+  slidesToShow: 3,
+  variableWidth: false, 
+
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+
