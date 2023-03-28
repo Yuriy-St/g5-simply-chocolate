@@ -27,6 +27,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
+
     
 
     <!-- Temporary scripts for slider -->
@@ -42,8 +43,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script type="module" crossorigin src="/g5-simply-chocolate/assets/index-245d07a1.js"></script>
-    <link rel="stylesheet" href="/g5-simply-chocolate/assets/index-2e791573.css">
+    <script type="module" crossorigin src="/g5-simply-chocolate/assets/index-7fc96d66.js"></script>
+    <link rel="stylesheet" href="/g5-simply-chocolate/assets/index-df3c1ae0.css">
   </head>
   <body>
     <!-- Header -->
@@ -407,7 +408,7 @@
       <span class="title-brand">chocolate </span>is loved
     </h2>
 
-    <div class="reviews__list responsive list">
+    <div class="reviews__list responsive">
       <div class="reviews__item">
         <div class="reviews__box">
           <div class="reviews-wrapper-image">
@@ -531,7 +532,9 @@
         </div>
       </div>
     </div>
-    <button class="reviews-button" type="button">Leave a review</button>
+    <button class="reviews-button js-open-modal" type="button" data-modal="1">
+      Leave a review
+    </button>
   </div>
 </section>
 
@@ -543,6 +546,107 @@
 
     <!-- Footer -->
     <footer class="footer"></footer>
+
+
+    <!-- Modals -->
+    <div id="overlay" class="backdrop-modals js-backdrop-modal">
+  <!-- review modal - 1 -->
+  <div class="reviews-modals general-modals modal modal1" data-modal="1">
+    <button class="reviews-button-close modal-close js-modal-close">
+      <svg class="reviews-modal-icon">
+        <use href="/g5-simply-chocolate/assets/sprite-de3c8ffe.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="reviews-modal-title">
+      <span class="modal-title-fix">Leave a review </span>about
+      <span class="modal-title-brand">our chocolate</span>
+    </h2>
+
+    <form class="reviews-modal-form" name="reviews" id="test">
+      <div class="reviews-modal-wrapper">
+        <label class="visually-hidden" for="name">Name</label>
+        <input
+          id="name"
+          class="reviews-modal-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
+      </div>
+
+      <div class="reviews-modal-wrapper">
+        <label class="visually-hidden" for="email">Email</label>
+        <input
+          id="email"
+          class="reviews-modal-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <div class="reviews-modal-wrapper review-modal-phone-wrapper">
+        <label class="visually-hidden" for="phone">Phone number</label>
+        <input
+          id="phone"
+          class="reviews-modal-input phone-input"
+          type="number"
+          name="phone"
+          placeholder="Phone number"
+          required
+        />
+
+        <div class="phone-inner">
+          <svg class="phone-inner-icon">
+            <use href="/g5-simply-chocolate/assets/sprite-de3c8ffe.svg#flag-ua"></use>
+          </svg>
+          <span class="phone-inner-code">+380</span>
+        </div>
+      </div>
+
+      <label class="visually-hidden" for="phone">Your review</label>
+      <textarea
+        id="review-about"
+        class="reviews-modal-textarea"
+        type="text"
+        name="review-about"
+        placeholder="Enter text"
+      ></textarea>
+
+      <button
+        type="submit"
+        class="review-modal-button js-open-modal review-button"
+        data-modal="2"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+
+  <!-- review modal - 2 -->
+  <div
+    class="reviews-feedback-modals general-modals modal modal2"
+    data-modal="2"
+  >
+    <button class="reviews-feedback-button-close modal-close js-modal-close">
+      <svg class="reviews-feedback-modal-icon">
+        <use href="/g5-simply-chocolate/assets/sprite-de3c8ffe.svg#close"></use>
+      </svg>
+    </button>
+    <div class="reviews-feedback-content">
+      <h2 class="reviews-feedback-modal-title">
+        thank you <span>for your feedback!</span>
+      </h2>
+      <p class="reviews-feedback-modal-text">
+        We are so happy to hear from you!
+      </p>
+    </div>
+  </div>
+
+  <!-- put your modals in here -->
+</div>
 
 
     <!-- Scripts -->
