@@ -4,17 +4,17 @@
       <span class="title-brand">chocolate </span>is loved
     </h2>
 
-    <div class="reviews__list responsive list">
+    <div class="reviews__list responsive">
       <div class="reviews__item">
         <div class="reviews__box">
           <div class="reviews-wrapper-image">
             <img
               class="reviews-logo"
               srcset="
-                ../img/reviews/victoria.jpg    1x,
-                ../img/reviews/victoria@2x.jpg 2x
+                ./img/reviews/victoria.jpg    1x,
+                ./img/reviews/victoria@2x.jpg 2x
               "
-              src="../img/reviews/victoria.jpg"
+              src="./img/reviews/victoria.jpg"
               alt="Victoria Dobrzhanska"
               width="80"
               height="80"
@@ -33,11 +33,8 @@
           <div class="reviews-wrapper-image">
             <img
               class="reviews-logo"
-              srcset="
-                ../img/reviews/nazar.jpg    1x,
-                ../img/reviews/nazar@2x.jpg 2x
-              "
-              src="../img/reviews/nazar.jpg"
+              srcset="./img/reviews/nazar.jpg 1x, ./img/reviews/nazar@2x.jpg 2x"
+              src="./img/reviews/nazar.jpg"
               alt="Nazar Babenko"
               width="80"
               height="80"
@@ -57,11 +54,8 @@
           <div class="reviews-wrapper-image">
             <img
               class="reviews-logo"
-              srcset="
-                ../img/reviews/olena.jpg    1x,
-                ../img/reviews/olena@2x.jpg 2x
-              "
-              src="../img/reviews/olena.jpg"
+              srcset="./img/reviews/olena.jpg 1x, ./img/reviews/olena@2x.jpg 2x"
+              src="./img/reviews/olena.jpg"
               alt="Olena Kampusch"
               width="80"
               height="80"
@@ -82,10 +76,10 @@
             <img
               class="reviews-logo"
               srcset="
-                ../img/reviews/natalia.jpg    1x,
-                ../img/reviews/natalia@2x.jpg 2x
+                ./img/reviews/natalia.jpg    1x,
+                ./img/reviews/natalia@2x.jpg 2x
               "
-              src="../img/reviews/natalia.jpg"
+              src="./img/reviews/natalia.jpg"
               alt="Natalia Sus"
               width="80"
               height="80"
@@ -105,10 +99,10 @@
             <img
               class="reviews-logo"
               srcset="
-                ../img/reviews/danilo.jpg    1x,
-                ../img/reviews/danilo@2x.jpg 2x
+                ./img/reviews/danilo.jpg    1x,
+                ./img/reviews/danilo@2x.jpg 2x
               "
-              src="../img/reviews/danilo.jpg"
+              src="./img/reviews/danilo.jpg"
               alt="Danilo Nottingham"
               width="80"
               height="80"
@@ -128,11 +122,8 @@
           <div class="reviews-wrapper-image">
             <img
               class="reviews-logo"
-              srcset="
-                ../img/reviews/irina.jpg    1x,
-                ../img/reviews/irina@2x.jpg 2x
-              "
-              src="../img/reviews/irina.jpg"
+              srcset="./img/reviews/irina.jpg 1x, ./img/reviews/irina@2x.jpg 2x"
+              src="./img/reviews/irina.jpg"
               alt="Irina Tydnyuk"
               width="80"
               height="80"
@@ -146,6 +137,8 @@
         </div>
       </div>
     </div>
-    <button class="reviews-button" type="button">Leave a review</button>
+    <button class="reviews-button js-open-modal" type="button" data-modal="1">
+      Leave a review
+    </button>
   </div>
 </section>
