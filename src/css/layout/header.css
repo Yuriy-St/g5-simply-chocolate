@@ -1,12 +1,10 @@
 .header-menu {
-  padding-top: 20px;
-  padding-bottom: 14px;
-}
-
-.header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-top: 20px;
+  padding-bottom: 14px;
 }
 
 .header-logo {
@@ -234,6 +232,12 @@
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .desc-menu-header {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header-menu {
     padding-bottom: 32px;
@@ -278,12 +282,6 @@
   }
 
   .menu-icon-close {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .desc-menu-header {
     display: none;
   }
 }
