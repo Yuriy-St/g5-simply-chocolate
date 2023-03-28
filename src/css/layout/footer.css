@@ -1,11 +1,76 @@
+.footer {
+    position: relative;
+    background-color: var(--dark-background-color);
+    color: var(--inverted-text-color);
+}
+
+.foot-title {
+    width: 300px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--inverted-text-color);
+}
+
+.foot-title span {
+    color: var(--primary-brand-color);
+}
+
+.address-title {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: left;
+    color: var(--inverted-text-color);
+}
+
+.address-item {
+    margin-bottom: 4px;
+}
+
+.address-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: left;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    color: var(--inverted-text-color);
+}
+
+.social-icon {
+    fill: var(--inverted-text-color);
+}
+
+.social-icon:hover {
+    fill: var(--primary-brand-color);
+}
+
+.foot-div::after {
+    position: absolute;
+    left: auto;
+    top: 224px;
+    display: block;
+    content: "";
+    width: 335px;
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform: rotate(180deg);
+    transition-property: color;
+   }
+
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: var(--inverted-text-color);
+    text-decoration: none;
+}
+
 @media (max-width: 767px) {
     .footer {
-        position: relative;
-        display: block;
         padding: 32px 0;
-    }
-
-    .foot-cont {
     }
 
     .foot-div {
@@ -15,11 +80,8 @@
     }
 
     .foot-title {
-        font-weight: 500;
         font-size: 24px;
         line-height: 1.17;
-        letter-spacing: -0.02em;
-        color: var(--inverted-text-color);
     }
 
     .social-list {
@@ -30,7 +92,6 @@
     .social-icon {
         width: 22px;
         height: 22px;
-        fill: var(--inverted-text-color);
     }
 
     .foot-div::after {
@@ -55,13 +116,11 @@
         flex-direction: column;
         gap: 12px;
     }
-
 }
 
 
 @media (min-width: 768px) {
     .footer {
-        position: relative;
         padding: 50px 0;
     }
     
@@ -71,11 +130,8 @@
     }
 
     .foot-title {
-        font-weight: 500;
         font-size: 28px;
         line-height: 1.21;
-        letter-spacing: -0.02em;
-        color: var(--inverted-text-color);
     }
 
     .foot-div {
@@ -92,21 +148,16 @@
     .social-icon {
         width: 24px;
         height: 24px;
-        fill: var(--inverted-text-color);
     }
 
     .foot-without-nav::after {
         position: absolute;
         width: 704px;
-        height: 0px;
-        left: auto;
+        height: 1px;
         top: 172px;
         display: block;
         content: "";
-        height: 1px;
         border: 1px solid rgba(255, 255, 255, 0.1);
-        transform: rotate(180deg);
-        transition-property: color;
     }
 
     .foot.nav {
@@ -132,53 +183,4 @@
     .foot.nav {
         margin-top: 82px;
     }
-}
-
-.footer {
-    background-color: var(--dark-background-color);
-    color: var(--inverted-text-color);
-}
-
-.foot-title span {
-    color: var(--primary-brand-color);
-}
-
-.address-title {
-    margin-bottom: 14px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: left;
-    color: var(--inverted-text-color);
-}
-
-.address-list {
-
-}
-
-.address-item {
-    margin-bottom: 4px;
-}
-
-.address-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: left;
-    letter-spacing: -0.02em;
-    text-decoration: none;
-    color: var(--inverted-text-color);
-}
-
-.social-icon:hover {
-    fill: var(--primary-brand-color);
-}
-
-.nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
-    color: var(--inverted-text-color);
-    text-decoration: none;
 }

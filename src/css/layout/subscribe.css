@@ -1,8 +1,12 @@
 .subscribe {
-    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-size: cover;
     text-align: center;
+    /*background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(./img/subscribe/subcribe-mobile.jpg);*/
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(./img/subscribe/subcribe-mobile.jpg);
+        image-set("./img/subscribe/subcribe-mobile.jpg" 1x, "./img/subscribe/subcribe-mobile.jpg" 2x);
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--dark-background-color);
@@ -14,29 +18,34 @@
 }
 
 .subscribe .section-title {
+    width: 291px;
+    margin: 0 auto;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 24px;
 }
 
-.subscribe .text {
+.subscribe-text {
     max-width: 326px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
     letter-spacing: -0.02em;
-    margin: 24px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
 }
 
-.subscribe-div .button {
+.subscribe-button {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;  
-    border: none;
+    /*border: none;
     border-radius: 100px;
     text-align: center;
     background-color: var(--primary-brand-color);
@@ -44,19 +53,21 @@
     align-items: center;
     width: 128px;
     height: 41px;
-    transition-property: background-color;
+    transition-property: background-color;*/
 }
     
-.subscribe-div. button:hover {
+/*.subscribe-button:hover {
     background-color: var(--secondary-brand-color);
     color: var(--primary-brand-color);
-}
+}*/
 
 
 @media (min-width: 768px) {
     .subscribe {
+        /*background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(./img/subscribe/subcribe-tablet.jpg);*/
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(./img/subscribe/subcribe-tablet.jpg);
+            image-set("./img/subscribe/subcribe-tablet.jpg" 1x, "./img/subscribe/subcribe-tablet.jpg" 2x);
     }
 
     .subscribe-div {
@@ -64,28 +75,33 @@
     }
 
     .subscribe .section-title {
+        width: 378px;
+        margin: 0 auto;
         font-weight: 600;
         font-size: 24px;
         line-height: 1.17;
+        margin-bottom: 24px;
     }
 
-    .subscribe .text {
+    .subscribe-text {
         max-width: 467px;
     }
 
-    .subscribe-div .button {
+    .subscribe-button {
         font-weight: 600;
         font-size: 18px;
         line-height: 1.22;
-        width: 172px;
-        height: 50px;
+        /*width: 172px;
+        height: 50px;*/
     }
 }
 
 @media (min-width: 1200px) {
     .subscribe {
+        /*background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(./img/subscribe/subcribe-desktop.jpg);*/
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(./img/subscribe/subcribe-desktop.jpg);
+            image-set("./img/subscribe/subcribe-desktop.jpg" 1x, "./img/subscribe/subcribe-desktop.jpg" 2x);
     }
 }
 
@@ -93,7 +109,7 @@
 
                                     /* Модальное окно */
 
- .backdrop.is-hidden {
+ /*.backdrop.is-hidden {
      visibility: hidden;
      opacity: 0;
      pointer-events: none;
@@ -101,7 +117,7 @@
 
  .backdrop.is-hidden .modal {
      transform: scale(0);
- }
+ }*/
 
  .backdrop {
      position: fixed;
@@ -121,7 +137,6 @@
      width: 95vw;
      max-width: 311px;
      height: 350px;
-     /*padding: 72px 24px 24px 24px;*/
      background: var(--inverted-text-color);
      border-radius: 15px;
      top: 50%;
@@ -136,6 +151,7 @@
 }
 
 .form-title {
+    width: 263px;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -160,7 +176,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    border: none;
+    /*border: none;
     border-radius: 100px;
     text-align: center;
     background-color: var(--primary-brand-color);
@@ -168,7 +184,7 @@
     align-items: center;
     width: 100px;
     height: 45px;
-    transition-property: background-color;
+    transition-property: background-color;*/
 }
 
 .submit-form {
@@ -185,7 +201,6 @@
     border-radius: 100px;
     border: 1px solid var(--light-stroke-color);
     margin-left: 24px;
-    /*margin-right: 24px;*/
 }
 
 ::placeholder {
@@ -196,7 +211,6 @@
     color: rgba(64, 64, 64, 0.3);
     padding-left: 18px;
 }
-
 
 .submit-form .close {
     position: absolute;
@@ -228,6 +242,7 @@
     }
 
     .form-title {
+        width: 298px;
         font-size: 24px;
         line-height: 1.17;
         margin: 40px 40px 28px 40px;
