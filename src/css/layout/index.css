@@ -3,6 +3,7 @@
    Layout
   ============================
 */
+@import url('./modal-backdrop-styles.css');
 @import url('./advantages.css');
 @import url('./footer.css');
 @import url('./header.css');
