@@ -1,32 +1,61 @@
-// slider
-$('.responsive').slick({
-  prevArrow: false,
-  nextArrow: false,
-  dots: true,
-  infinite: false,
-  speed: 300,
-  adaptiveHeight: true,
-  slidesToScroll: 1,
-  slidesToShow: 3,
-  variableWidth: false, 
+// slider - 1
+let reviews_slider_param = {
+    prevArrow: false,
+    nextArrow: false,
+    dots: true,
+    infinite: false,
+    speed: 300,
+    adaptiveHeight: true,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    variableWidth: false, 
 
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+        },
       },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-});
 
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+}
+$('.responsive').slick(reviews_slider_param);
+
+
+// slider - 2
+const slide_param_2 = {
+    prevArrow: false,
+    nextArrow: false,
+    dots: false,
+    infinite: false,
+    speed: 300,
+    adaptiveHeight: true,
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    variableWidth: false, 
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+
+        },
+      },
+    ],
+}
+$('.responsive-sellers').slick(slide_param_2);
+  
 
 // modal
   !(function (e) {
