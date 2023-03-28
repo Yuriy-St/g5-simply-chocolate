@@ -1,12 +1,19 @@
+@media screen and (min-device-pixel-ratio: 2),
+       screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi),
+       screen and (min-resolution: 2dppx) {
+    .subscribe {
+        background-image: url('./img/subscribe/subcribe-mobile@2x.jpg');
+    }
+}
+
 .subscribe {
     max-width: 1200px;
     margin: 0 auto;
     background-size: cover;
     text-align: center;
-    /*background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(./img/subscribe/subcribe-mobile.jpg);*/
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        image-set("./img/subscribe/subcribe-mobile.jpg" 1x, "./img/subscribe/subcribe-mobile.jpg" 2x);
+        url(./img/subscribe/subcribe-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--dark-background-color);
@@ -62,12 +69,19 @@
 }*/
 
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+       screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 768px) and (min-resolution: 192dpi),
+       screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .subscribe {
+        background-image: url('./img/subscribe/subcribe-tablet@2x.jpg');
+    }
+}
+
 @media (min-width: 768px) {
     .subscribe {
-        /*background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(./img/subscribe/subcribe-tablet.jpg);*/
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            image-set("./img/subscribe/subcribe-tablet.jpg" 1x, "./img/subscribe/subcribe-tablet.jpg" 2x);
+            url(./img/subscribe/subcribe-tablet.jpg);
     }
 
     .subscribe-div {
@@ -96,12 +110,20 @@
     }
 }
 
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+       screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-width: 1200px) and (min-resolution: 192dpi),
+       screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .subscribe {
+        background-image: url('./img/subscribe/subcribe-desktop@2x.jpg');
+    }
+}
+
 @media (min-width: 1200px) {
     .subscribe {
-        /*background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(./img/subscribe/subcribe-desktop.jpg);*/
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            image-set("./img/subscribe/subcribe-desktop.jpg" 1x, "./img/subscribe/subcribe-desktop.jpg" 2x);
+            url(./img/subscribe/subcribe-desktop.jpg);
     }
 }
 
