@@ -1,169 +1,136 @@
-@media screen and (min-device-pixel-ratio: 2),
-       screen and (-webkit-min-device-pixel-ratio: 2),
-       screen and (min-resolution: 192dpi),
-       screen and (min-resolution: 2dppx) {
-    .subscribe {
-        background-image: url('./img/subscribe/subcribe-mobile@2x.jpg');
-    }
-}
-
+             /* ----- @media mobile-first (max-width: 767px) ----- */
 .subscribe {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 62px 0;
     background-size: cover;
     text-align: center;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(./img/subscribe/subcribe-mobile.jpg);
+        url(../img/subscribe/subcribe-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--dark-background-color);
     color: var(--inverted-text-color);
 }
 
-.subscribe-div {
-    padding: 62px 0;
+@media screen and (min-device-pixel-ratio: 2),
+       screen and (-webkit-min-device-pixel-ratio: 2),
+       screen and (min-resolution: 192dpi),
+       screen and (min-resolution: 2dppx) {
+    .subscribe {
+        background-image: url('../img/subscribe/subcribe-mobile@2x.jpg');
+    }
 }
 
-.subscribe .section-title {
-    width: 291px;
-    margin: 0 auto;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    margin-bottom: 24px;
+                /* ----- @media (min-width: 768px) ----- */
+@media (min-width: 768px) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/subcribe-tablet.jpg);
+        padding: 72px 0;
+    }
 }
-
-.subscribe-text {
-    max-width: 326px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    letter-spacing: -0.02em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-}
-
-.subscribe-button {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;  
-    /*border: none;
-    border-radius: 100px;
-    text-align: center;
-    background-color: var(--primary-brand-color);
-    color: var(--inverted-text-color);
-    align-items: center;
-    width: 128px;
-    height: 41px;
-    transition-property: background-color;*/
-}
-    
-/*.subscribe-button:hover {
-    background-color: var(--secondary-brand-color);
-    color: var(--primary-brand-color);
-}*/
-
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
        screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
        screen and (min-width: 768px) and (min-resolution: 192dpi),
        screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .subscribe {
-        background-image: url('./img/subscribe/subcribe-tablet@2x.jpg');
+        background-image: url('../img/subscribe/subcribe-tablet@2x.jpg');
     }
 }
 
-@media (min-width: 768px) {
+                /* ----- @media (min-width: 1200px) ----- */
+@media (min-width: 1200px) {
     .subscribe {
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(./img/subscribe/subcribe-tablet.jpg);
-    }
-
-    .subscribe-div {
-        padding: 72px 0;
-    }
-
-    .subscribe .section-title {
-        width: 378px;
-        margin: 0 auto;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 1.17;
-        margin-bottom: 24px;
-    }
-
-    .subscribe-text {
-        max-width: 467px;
-    }
-
-    .subscribe-button {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 1.22;
-        /*width: 172px;
-        height: 50px;*/
+            url(../img/subscribe/subcribe-desktop.jpg);
     }
 }
-
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
        screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
        screen and (min-width: 1200px) and (min-resolution: 192dpi),
        screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     .subscribe {
-        background-image: url('./img/subscribe/subcribe-desktop@2x.jpg');
+        background-image: url('../img/subscribe/subcribe-desktop@2x.jpg');
     }
 }
 
-@media (min-width: 1200px) {
-    .subscribe {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-            url(./img/subscribe/subcribe-desktop.jpg);
+ 
+                /* ----- @media mobile-first (max-width: 767px) ----- */
+    .subscribe .section-title {
+        width: 291px;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+                    /* ----- @media (min-width: 768px) ----- */
+@media (min-width: 768px) {
+    .subscribe .section-title {
+        width: 378px;
+        font-size: 24px;
+        line-height: 1.17;
+    }
+}
+                /* ----- @media mobile-first (max-width: 767px) ----- */
+    .subscribe-text {
+        max-width: 326px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.29;
+        text-align: center;
+        letter-spacing: -0.02em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+    }
+
+                    /* ----- @media (min-width: 768px) ----- */
+@media (min-width: 768px) {
+    .subscribe-text {
+        max-width: 467px;
     }
 }
 
+                /* ----- @media mobile-first (max-width: 767px) ----- */
+    .subscribe-button {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;  
+    }
+    
+                    /* ----- @media (min-width: 768px) ----- */
+ @media (min-width: 768px) {
+    .subscribe-button {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
 
 
                                     /* Модальное окно */
 
- /*.backdrop.is-hidden {
-     visibility: hidden;
-     opacity: 0;
-     pointer-events: none;
- }
-
- .backdrop.is-hidden .modal {
-     transform: scale(0);
- }*/
-
- .backdrop {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-     transition: opasity 500ms, visibility 500ms, transform 500ms;
-     transform: scale(1);
-     background: rgba(46, 47, 66, 0.4);
-     visibility: visible
- }
-
- .subscribe-modal {
-     position: relative;
+  .subscribe-modal {
      width: 95vw;
      max-width: 311px;
      height: 350px;
      background: var(--inverted-text-color);
      border-radius: 15px;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+ }
+
+ @media (min-width: 768px) {
+    .subscribe-modal {
+            max-width: 538px;
+            height: 412px;
+    }
  }
 
 
@@ -171,6 +138,7 @@
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
+
 
 .form-title {
     width: 263px;
@@ -182,6 +150,15 @@
     text-align: left;
     color: var(--primary-text-color);
     margin: 32px 24px 24px 24px;
+}
+
+ @media (min-width: 768px) {
+    .form-title {
+        width: 298px;
+        font-size: 24px;
+        line-height: 1.17;
+        margin: 40px 40px 28px 40px;
+    }
 }
 
 .form-title span {
@@ -198,16 +175,17 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    /*border: none;
-    border-radius: 100px;
-    text-align: center;
-    background-color: var(--primary-brand-color);
-    color: var(--inverted-text-color);
-    align-items: center;
-    width: 100px;
-    height: 45px;
-    transition-property: background-color;*/
 }
+
+ @media (min-width: 768px) {
+    .submit-btn {
+        position: absolute;
+        right: -144px;
+        width: 137px;
+        height: 52px;
+    }
+}
+
 
 .submit-form {
     position: relative;
@@ -215,15 +193,26 @@
     justify-content: space-between;
 }
 
+
 .foot-input {
     position: relative;
     width: 263px;
     /*width: 100%;*/
-    height: 45px;
+    height: 43px;
     border-radius: 100px;
     border: 1px solid var(--light-stroke-color);
     margin-left: 24px;
+    padding-left: 18px;
 }
+
+ @media (min-width: 768px) {
+    .foot-input {
+        width: 313px;
+        height: 52px;
+        margin-left: 40px;
+    }
+}
+
 
 ::placeholder {
     font-weight: 400;
@@ -231,8 +220,16 @@
     line-height: 1.21;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
-    padding-left: 18px;
+    padding-left: 0;
 }
+
+ @media (min-width: 768px) {
+    ::placeholder {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
 
 .submit-form .close {
     position: absolute;
@@ -246,56 +243,28 @@
     background-color: transparent;
  }
 
+@media (min-width: 768px) {
+    .submit-form .close {
+        top: -300px;
+        right: 24px;
+    }
+}
+
 .submit-form .close-icon {
     width: 24px;
     height: 24px;
     fill: var(--inverted-text-color);
 }
 
-.submit-form .close:hover .close-icon {
-    fill: var(--primary-brand-color);
-}
-
-
 @media (min-width: 768px) {
-    .subscribe-modal {
-        max-width: 538px;
-        height: 412px;
-    }
-
-    .form-title {
-        width: 298px;
-        font-size: 24px;
-        line-height: 1.17;
-        margin: 40px 40px 28px 40px;
-    }
-
-    .submit-btn {
-        position: absolute;
-        right: -144px;
-        width: 137px;
-        height: 52px;
-    }
-
-    .foot-input {
-        width: 313px;
-        height: 52px;
-        margin-left: 40px;
-    }
-
-    .foot-input::placeholder {
-        font-size: 18px;
-        line-height: 1.22;
-        padding-left: 24px;
-    }
-
-    .submit-form .close {
-        top: -300px;
-        right: 24px;
-    }
-
     .submit-form .close-icon {
         width: 28px;
         height: 28px;
     }
+}
+
+
+.submit-form .close:hover .close-icon,
+.submit-form .close:focus .close-icon {
+    fill: var(--primary-brand-color);
 }
