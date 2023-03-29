@@ -15,6 +15,7 @@
   color: var(--primary-text-color);
 }
 
+
 .akcent-title {
   color: var(--orange-color);
 }
@@ -89,7 +90,7 @@
 
   .top-sellers-title {
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 50px;
     text-align: center;
     font-weight: 600;
     font-size: 24px;
