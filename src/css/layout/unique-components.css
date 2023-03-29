@@ -1,3 +1,7 @@
+.unique-components .container {
+  max-width: 335px;
+}
+
 .unique-components .section-title {
   margin: 0 auto 24px;
 
@@ -17,7 +21,7 @@
 .unique-text {
   margin: 0 auto 32px;
 
-  max-width: 486px;
+  max-width: 335px;
 
   text-align: center;
 }
@@ -150,16 +154,20 @@
 }
 
 @media screen and (min-width: 768px) {
+  .unique-components .container {
+    max-width: 768px;
+  }
+
   .unique-components .section-title {
     margin: 0 auto 28px;
     max-width: 411px;
 
     font-size: 24px;
-    line-height: 1.7;
   }
 
   .unique-text {
     margin: 0 auto 50px;
+    max-width: 486px;
   }
 
   .components-list {
@@ -172,6 +180,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .unique-components .container {
+    max-width: 1200px;
+  }
   .components-list {
     gap: 19px;
   }
