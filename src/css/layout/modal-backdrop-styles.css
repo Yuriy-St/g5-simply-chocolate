@@ -41,7 +41,8 @@
 /* show modal when js add active class to modal*/
 .modal1.active,
 .modal2.active,
-.modal3.active {
+.modal3.active,
+.modal9.active {
   visibility: visible;
   opacity: 1;
   pointer-events: initial;
