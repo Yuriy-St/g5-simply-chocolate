@@ -1,6 +1,7 @@
 .hero {
   max-width: 1200px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-bg {
