@@ -14,14 +14,15 @@
 function getVideos() {
     var v = document.getElementsByClassName("youtube-player");
     for (var n = 0; n < v.length; n++) {
-        var p = document.createElement("div");
+      var p = document.createElement("div");
+      p.classList.add('play-img-wrapper');
         var id = v[n].getAttribute("data-id");
 
         var placeholder = v[n].hasAttribute("data-thumbnail")
             ? v[n].getAttribute("data-thumbnail")
             : "";
 
-        if (placeholder.length) p.innerHTML = createCustomThumbail(placeholder);
+        if (placeholder.length) p.innerHTML = createCustomThumbnail(placeholder);
         else p.innerHTML = createThumbail(id);
 
         v[n].appendChild(p);
@@ -37,7 +38,7 @@ function getVideos() {
  * @param {string} url
  * @return {string} The HTML containing the <img> tag
  */
-function createCustomThumbail(url) {
+function createCustomThumbnail(url) {
     return (
         '<img class="youtube-thumbnail" src="' +
         url +

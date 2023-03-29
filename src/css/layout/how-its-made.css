@@ -34,12 +34,19 @@ iframe {
   height: 500px;
   border-radius: 15px;
 }
-div.youtube-play-btn {
+
+.play-img-wrapper {
+  position: relative;
+  /* height: 35px; */
+  width: 100%;
+}
+
+.youtube-play-btn {
+  width: 35px;
+  height: 35px;
   position: absolute;
   justify-self: center;
-  height: 35px;
-  width: 35px;
-  top: 43%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
@@ -55,45 +62,44 @@ div.youtube-play-btn {
   margin-top: 20px;
 }
 
-  .section-subtitle {
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.33;
-  }
-  
-  .section-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: 0.02em;
-    color:var(--primary-text-color);
-    margin-top: 0;
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-  }
+.section-subtitle {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+}
 
-  .name {
-    color:var(--primary-brand-color);
-  }
-  
-  .disc {
-    position: relative;
-  }
-  
-  .icon-disc {
-    position: absolute;
-    top: 4px;
-    left: -16px;
-    width: 8px;
-    height: 8px;
-    margin-right: 8px;
-  }
+.section-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  margin-top: 0;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
 
-  
+.name {
+  color: var(--primary-brand-color);
+}
+
+.disc {
+  position: relative;
+}
+
+.icon-disc {
+  position: absolute;
+  top: 4px;
+  left: -16px;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+}
+
 /* tablet */
 
 @media screen and (min-width: 768px) {
@@ -111,8 +117,7 @@ div.youtube-play-btn {
     flex-wrap: wrap;
     margin-bottom: 20px;
     justify-content: center;
-    margin: 0
-    p
+    margin: 0 p;
   }
 
   iframe {
@@ -124,13 +129,12 @@ div.youtube-play-btn {
   .frame_wrapper {
     width: 614px;
   }
-  .youtube-container {
-    height: 400px;
-  }
 
   .youtube-container {
-    position: relative;
+    height: 400px;
+    /* position: relative; */
   }
+
   .youtube-player {
     height: 400px;
   }
@@ -139,15 +143,9 @@ div.youtube-play-btn {
     border-radius: 15px;
   }
 
-  div.youtube-play-btn {
-    position: absolute;
+  .youtube-play-btn {
     height: 44px;
     width: 44px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-    background: url('./play.svg') no-repeat center center;
   }
 
   .container-section {
@@ -159,31 +157,29 @@ div.youtube-play-btn {
   }
   .section-subtitle {
     width: 350px;
-    height: 48px; 
+    height: 48px;
     margin-bottom: 28px;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.33;
   }
   .section-text {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
   }
- 
 }
-@media screen and (min-width:1200px) {
-
+@media screen and (min-width: 1200px) {
   .chocolate {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     gap: 20px;
     justify-content: center;
-    }
-  
+  }
+
   .frame_wrapper {
     width: 600px;
   }
@@ -196,16 +192,16 @@ div.youtube-play-btn {
     border: 1px solid #eceded;
     border-radius: 15px;
   }
-  
+
   .section-text {
     width: 452px;
     height: 260px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 0px;
-      gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
   }
 
   .youtube-thumbnail {
