@@ -1,3 +1,91 @@
+// How To made for iframe script
+/**
+ * Get videos on load
+ */
+(function () {
+  getVideos();
+})();
+
+/**
+ * For each video player, create custom thumbnail or
+ * use Youtube max resolution default thumbnail and create
+ * iframe video.
+ */
+function getVideos() {
+  var v = document.getElementsByClassName('youtube-player');
+  for (var n = 0; n < v.length; n++) {
+    var p = document.createElement('div');
+    p.classList.add('play-img-wrapper');
+    var id = v[n].getAttribute('data-id');
+
+    var placeholder = v[n].hasAttribute('data-thumbnail')
+      ? v[n].getAttribute('data-thumbnail')
+      : '';
+
+    if (placeholder.length) p.innerHTML = createCustomThumbnail(placeholder);
+    else p.innerHTML = createThumbail(id);
+
+    v[n].appendChild(p);
+    p.addEventListener('click', function () {
+      var parent = this.parentNode;
+      createIframe(parent, parent.getAttribute('data-id'));
+    });
+  }
+}
+
+/**
+ * Create custom thumbnail from data-attribute provided url
+ * @param {string} url
+ * @return {string} The HTML containing the <img> tag
+ */
+function createCustomThumbnail(url) {
+  return (
+    '<img class="youtube-thumbnail" src="' +
+    url +
+    '" alt="Youtube Preview" /><div class="youtube-play-btn"></div>'
+  );
+}
+
+/**
+ * Get Youtube default max resolution thumbnail
+ * @param {string} id The Youtube video id
+ * @return {string} The HTML containing the <img> tag
+ */
+function createThumbail(id) {
+  return (
+    '<img class="youtube-thumbnail" src="//i.ytimg.com/vi_webp/' +
+    id +
+    '/maxresdefault.webp" alt="Youtube Preview"><div class="youtube-play-btn"></div>'
+  );
+}
+
+/**
+ * Create and load iframe in Youtube container
+ **/
+function createIframe(v, id) {
+  var iframe = document.createElement('iframe');
+  console.log(v);
+  iframe.setAttribute(
+    'src',
+    '//www.youtube.com/embed/' +
+      id +
+      '?autoplay=1&color=white&autohide=2&modestbranding=1&border=0&wmode=opaque&enablejsapi=1&showinfo=0&rel=0'
+  );
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('class', 'youtube-iframe');
+  v.firstChild.replaceWith(iframe);
+}
+
+/** Pause video on modal close **/
+$('#video-modal').on('hidden.bs.modal', function (e) {
+  $(this).find('iframe').remove();
+});
+
+/** Pause video on modal close **/
+$('#video-modal').on('show.bs.modal', function (e) {
+  getVideos();
+});
+
 // general slider params
 const generalSliderValues = {
   prevArrow: false,
@@ -47,6 +135,19 @@ $('.responsive').slick(
   (generalSliderValues.responsive = responsiveSliderPar.responsiveSliders)
 );
 
+// Gallery
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionDelay: 250,
+  captionsData: 'alt',
+});
+
+(() => {
+  const images = document.querySelectorAll('.gallery-link');
+  images.forEach(el => {
+    const img = el.querySelector('img');
+    el.href = a;
+  });
+})();
 // slider-2
 $('.responsive-sellers').slick(
   generalSliderValues,
@@ -156,3 +257,32 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.remove('modal-open');
   });
 });
+
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const openMenuBtn = document.querySelector('.js-open-menu');
+  const closeMenuBtn = document.querySelector('.js-close-menu');
+
+  const toggleMenu = () => {
+    const isMenuOpen =
+      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
+
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
+  };
+
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
+
+  // Close the mobile menu on wider screens if the device orientation changes
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-open');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
+})();
