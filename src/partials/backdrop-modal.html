@@ -94,6 +94,158 @@
     </div>
   </div>
 
+  <!-- top sellers - 3 -->
+  <div class="order-modal_window general-modals modal modal3" data-modal="3">
+    <button type="button" class="order-modal_window-close js-modal-close">
+      <svg class="order-modal_window-close-icon">
+        <use href="../img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="order-modal-title"><span class="akcent-title">Buy</span> now</h3>
+
+    <div class="order-swiper-wrapper responsive-sellers">
+      <div class="order-swiper-slide">
+        <!-- Поменять класс box-test-->
+        <div class="box-test">
+          <div class="order-slider-image">
+            <img
+              class="slider-demonstrate"
+              srcset="../img/buy-now/chocolate-desktop@2x.jpg 2x"
+              src="../img/buy-now/chocolate-desktop.jpg"
+              alt="kinder-chocolate-white-chocolate-chocolate-nuts"
+              width="167"
+              height="148"
+            />
+            <div class="weight-selection">100 g</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-swiper-slide">
+        <div class="box-test">
+          <div class="order-slider-image">
+            <img
+              class="slider-demonstrate"
+              srcset="../img/buy-now/chocolate-white-desktop@2x.jpg 2x"
+              src="../img/buy-now/chocolate-white-desktop.jpg"
+              alt="white-chocolate-cocoa-bean-chocolate-cake"
+              width="167"
+              height="148"
+            />
+            <div class="weight-selection">200 g</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="order-swiper-slide">
+        <div class="box-test">
+          <div class="order-slider-image">
+            <img
+              class="slider-demonstrate"
+              srcset="../img/buy-now/chocolate-bar-desktop@2x.jpg 2x"
+              src="../img/buy-now/chocolate-bar-desktop.jpg"
+              alt="dark-chocolate"
+              width="167"
+              height="148"
+            />
+            <div class="weight-selection">300 g</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="order-modal-form">
+      <div class="customer-form-field">
+        <div class="form-field">
+          <label for="name" class="customer-form-label"
+            >Personal information
+            <div class="form-field-tablet">
+              <input
+                type="text"
+                class="customer-form-input"
+                name="name"
+                id="name"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                class="customer-form-input"
+                name="surname"
+                id="surname"
+                placeholder="Surname"
+              />
+            </div>
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="mail" class="customer-form-label"
+            >Email
+            <input
+              type="email"
+              class="customer-form-input"
+              name="mail"
+              id="mail"
+              placeholder="Enter your email"
+            />
+          </label>
+        </div>
+        <div class="form-field">
+          <!-- <div class="phone-inner">
+                  <svg class="phone-inner-icon">
+                    <use href="./img/sprite.svg#flag-ua"></use>
+                  </svg>
+                  <span class="phone-inner-code">+380</span>
+                </div> -->
+          <label for="phone" class="customer-form-label"
+            >Phone number
+            <span class="country-code">
+              <input
+                type="tel"
+                class="customer-form-input_for-number"
+                name="phone"
+                id="phone"
+                placeholder="Phone number"
+              />
+              <svg class="flag-icon" width="72" height="40">
+                <use href="../img/sprite.svg#flag-code"></use>
+              </svg>
+            </span>
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="number" class="customer-form-label"
+            >Card number
+            <span class="card-code">
+              <input
+                type="number"
+                class="customer-form-input"
+                name="number"
+                id="number"
+                placeholder="Enter card"
+              />
+              <svg class="mastercard-icon" width="32" height="21">
+                <use href="../img/sprite.svg#mastercard"></use>
+              </svg>
+            </span>
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="comment" class="customer-form-label">Comment</label>
+          <textarea
+            class="comment-input"
+            name="comment"
+            id="comment"
+            rows="4"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+        <div class="button-field">
+          <button type="submit" class="modal-button-brand">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
   <!-- put your modals in here -->
 
 <!-- Модальное окно в subscribe "Explore our new chocolate first"
