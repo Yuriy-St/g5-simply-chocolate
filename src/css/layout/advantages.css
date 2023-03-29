@@ -10,6 +10,7 @@
 
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   row-gap: 20px;
 }
@@ -53,7 +54,6 @@
 
   .advantages-list {
     justify-content: initial;
-    flex-wrap: wrap;
     column-gap: 60px;
   }
 
