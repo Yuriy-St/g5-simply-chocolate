@@ -441,7 +441,7 @@
   letter-spacing: -0.02em;
 
   background-color: var(--primary-brand-color);
-  background-image: url('/../img/thank-you/background-mobile.png');
+  background-image: url('/img/thank-you/background-mobile.png');
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -456,7 +456,7 @@
     padding: 0;
     padding-right: 50px;
 
-    background-image: url('/../img/thank-you/background-desktop.png');
+    background-image: url('/img/thank-you/background-desktop.png');
   }
 }
 
