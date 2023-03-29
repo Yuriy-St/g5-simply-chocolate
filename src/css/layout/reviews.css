@@ -187,7 +187,7 @@
   margin: 0;
   margin-right: 13px;
 }
-.slick-dots li:last-child() {
+.slick-dots li:last-child {
   margin-right: 0;
 }
 
