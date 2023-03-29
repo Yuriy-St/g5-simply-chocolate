@@ -190,6 +190,7 @@
 @media (min-width: 768px) {
     .nav-list {
         display: flex;
+        flex-direction: row;
         gap: 24px;
     }
  }
