@@ -14,38 +14,18 @@
     <form class="reviews-modal-form" name="reviews" id="test">
       <div class="reviews-modal-wrapper">
         <label class="visually-hidden" for="name">Name</label>
-        <input
-          id="name"
-          class="reviews-modal-input"
-          type="text"
-          name="name"
-          placeholder="Name"
-          required
-        />
+        <input id="name" class="reviews-modal-input" type="text" name="name" placeholder="Name" required />
       </div>
 
       <div class="reviews-modal-wrapper">
         <label class="visually-hidden" for="email">Email</label>
-        <input
-          id="email"
-          class="reviews-modal-input"
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-        />
+        <input id="email" class="reviews-modal-input" type="email" name="email" placeholder="Email" required />
       </div>
 
       <div class="reviews-modal-wrapper review-modal-phone-wrapper">
         <label class="visually-hidden" for="phone">Phone number</label>
-        <input
-          id="phone"
-          class="reviews-modal-input phone-input"
-          type="number"
-          name="phone"
-          placeholder="Phone number"
-          required
-        />
+        <input id="phone" class="reviews-modal-input phone-input" type="number" name="phone" placeholder="Phone number"
+          required />
 
         <div class="phone-inner">
           <svg class="phone-inner-icon">
@@ -56,29 +36,17 @@
       </div>
 
       <label class="visually-hidden" for="phone">Your review</label>
-      <textarea
-        id="review-about"
-        class="reviews-modal-textarea"
-        type="text"
-        name="review-about"
-        placeholder="Enter text"
-      ></textarea>
+      <textarea id="review-about" class="reviews-modal-textarea" type="text" name="review-about"
+        placeholder="Enter text"></textarea>
 
-      <button
-        type="submit"
-        class="review-modal-button js-open-modal review-button"
-        data-modal="2"
-      >
+      <button type="submit" class="review-modal-button js-open-modal review-button" data-modal="2">
         Send
       </button>
     </form>
   </div>
 
   <!-- review modal - 2 -->
-  <div
-    class="reviews-feedback-modals general-modals modal modal2"
-    data-modal="2"
-  >
+  <div class="reviews-feedback-modals general-modals modal modal2" data-modal="2">
     <button class="reviews-feedback-button-close modal-close js-modal-close">
       <svg class="reviews-feedback-modal-icon">
         <use href="./img/sprite.svg#close"></use>
@@ -105,49 +73,32 @@
 
     <div class="order-swiper-wrapper responsive-sellers">
       <div class="order-swiper-slide">
-        <!-- Поменять класс box-test-->
-        <div class="box-test">
+        <div class="order-slider-card">
           <div class="order-slider-image">
-            <img
-              class="slider-demonstrate"
-              srcset="../img/buy-now/chocolate-desktop@2x.jpg 2x"
-              src="../img/buy-now/chocolate-desktop.jpg"
-              alt="kinder-chocolate-white-chocolate-chocolate-nuts"
-              width="167"
-              height="148"
-            />
+            <img class="slider-demonstrate" srcset="../img/buy-now/chocolate-desktop@2x.jpg 2x"
+              src="../img/buy-now/chocolate-desktop.jpg" alt="kinder-chocolate-white-chocolate-chocolate-nuts"
+              width="167" height="148" />
             <div class="weight-selection">100 g</div>
           </div>
         </div>
       </div>
 
       <div class="order-swiper-slide">
-        <div class="box-test">
+        <div class="order-slider-card">
           <div class="order-slider-image">
-            <img
-              class="slider-demonstrate"
-              srcset="../img/buy-now/chocolate-white-desktop@2x.jpg 2x"
-              src="../img/buy-now/chocolate-white-desktop.jpg"
-              alt="white-chocolate-cocoa-bean-chocolate-cake"
-              width="167"
-              height="148"
-            />
+            <img class="slider-demonstrate" srcset="../img/buy-now/chocolate-white-desktop@2x.jpg 2x"
+              src="../img/buy-now/chocolate-white-desktop.jpg" alt="white-chocolate-cocoa-bean-chocolate-cake"
+              width="167" height="148" />
             <div class="weight-selection">200 g</div>
           </div>
         </div>
       </div>
 
       <div class="order-swiper-slide">
-        <div class="box-test">
+        <div class="order-slider-card">
           <div class="order-slider-image">
-            <img
-              class="slider-demonstrate"
-              srcset="../img/buy-now/chocolate-bar-desktop@2x.jpg 2x"
-              src="../img/buy-now/chocolate-bar-desktop.jpg"
-              alt="dark-chocolate"
-              width="167"
-              height="148"
-            />
+            <img class="slider-demonstrate" srcset="../img/buy-now/chocolate-bar-desktop@2x.jpg 2x"
+              src="../img/buy-now/chocolate-bar-desktop.jpg" alt="dark-chocolate" width="167" height="148" />
             <div class="weight-selection">300 g</div>
           </div>
         </div>
@@ -157,72 +108,35 @@
     <form class="order-modal-form">
       <div class="customer-form-field">
         <div class="form-field">
-          <label for="name" class="customer-form-label"
-            >Personal information
+          <label for="name" class="customer-form-label">Personal information
             <div class="form-field-tablet">
-              <input
-                type="text"
-                class="customer-form-input"
-                name="name"
-                id="name"
-                placeholder="Name"
-              />
-              <input
-                type="text"
-                class="customer-form-input"
-                name="surname"
-                id="surname"
-                placeholder="Surname"
-              />
+              <input type="text" class="customer-form-input" name="name" id="name" placeholder="Name" />
+              <input type="text" class="customer-form-input" name="surname" id="surname" placeholder="Surname" />
             </div>
           </label>
         </div>
         <div class="form-field">
-          <label for="mail" class="customer-form-label"
-            >Email
-            <input
-              type="email"
-              class="customer-form-input"
-              name="mail"
-              id="mail"
-              placeholder="Enter your email"
-            />
+          <label for="mail" class="customer-form-label">Email
+            <input type="email" class="customer-form-input" name="mail" id="mail" placeholder="Enter your email" />
           </label>
         </div>
         <div class="form-field">
-          <!-- <div class="phone-inner">
-                  <svg class="phone-inner-icon">
-                    <use href="./img/sprite.svg#flag-ua"></use>
-                  </svg>
-                  <span class="phone-inner-code">+380</span>
-                </div> -->
-          <label for="phone" class="customer-form-label"
-            >Phone number
+          <label for="phone" class="customer-form-label">Phone number
             <span class="country-code">
-              <input
-                type="tel"
-                class="customer-form-input_for-number"
-                name="phone"
-                id="phone"
-                placeholder="Phone number"
-              />
-              <svg class="flag-icon" width="72" height="40">
-                <use href="../img/sprite.svg#flag-code"></use>
-              </svg>
+              <input type="tel" class="customer-form-input_for-number" name="phone" id="phone"
+                placeholder="Phone number" />
+              <div class="code-input"><svg class="flag-icon" width="24" height="24">
+                  <use href="../img/sprite.svg#flag-ua"></use>
+                </svg>
+                <span class="ua-code">+380</span>
+              </div>
             </span>
           </label>
         </div>
         <div class="form-field">
-          <label for="number" class="customer-form-label"
-            >Card number
+          <label for="number" class="customer-form-label">Card number
             <span class="card-code">
-              <input
-                type="number"
-                class="customer-form-input"
-                name="number"
-                id="number"
-                placeholder="Enter card"
-              />
+              <input type="number" class="customer-form-input" name="number" id="number" placeholder="Enter card" />
               <svg class="mastercard-icon" width="32" height="21">
                 <use href="../img/sprite.svg#mastercard"></use>
               </svg>
@@ -231,13 +145,7 @@
         </div>
         <div class="form-field">
           <label for="comment" class="customer-form-label">Comment</label>
-          <textarea
-            class="comment-input"
-            name="comment"
-            id="comment"
-            rows="4"
-            placeholder="Enter text"
-          ></textarea>
+          <textarea class="comment-input" name="comment" id="comment" rows="4" placeholder="Enter text"></textarea>
         </div>
         <div class="button-field">
           <button type="submit" class="modal-button-brand">Submit</button>

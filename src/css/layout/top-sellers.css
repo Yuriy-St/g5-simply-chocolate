@@ -2,6 +2,7 @@
   padding-top: 72px;
   padding-bottom: 72px;
 }
+
 .top-sellers-title {
   margin-top: 0;
   margin-bottom: 32px;
@@ -13,18 +14,22 @@
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
+
 .akcent-title {
   color: var(--orange-color);
 }
+
 .top-sellers-list {
   display: flex;
   flex-wrap: wrap;
 }
+
 .top-sellers-showcase img {
   max-width: 368px;
   height: 464px;
   border-radius: 15px;
 }
+
 .top-sellers-comment-mobile {
   margin-top: 20px;
   margin-bottom: 32px;
@@ -35,6 +40,7 @@
   color: var(--primary-text-color);
   width: 306px;
 }
+
 @media screen and (max-width: 767px) {
   .buy-button-brand {
     margin-top: 20px;
@@ -55,27 +61,32 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .buy-button-brand:hover {
     color: var(--primary-brand-color);
     background-color: var(--secondary-brand-color);
   }
 }
+
 @media screen and (max-width: 1199px) {
   .candy {
     display: none;
   }
 }
+
 /* TABLET */
 @media screen and (max-width: 768px) {
   .top-sellers-comment-tablet {
     display: none;
   }
 }
+
 @media screen and (min-width: 768px) {
   .top-sellers {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
   .top-sellers-title {
     margin-top: 0;
     margin-bottom: 32px;
@@ -87,28 +98,34 @@
     text-transform: uppercase;
     color: var(--primary-text-color);
   }
+
   .top-sellers-list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
   .top-sellers-showcase :not(:last-child) {
     margin-right: 16px;
   }
+
   .top-sellers-showcase img {
     max-width: 344px;
     height: 464px;
     border-radius: 15px;
   }
+
   .top-sellers-for-mobile {
     display: none;
   }
+
   .top-sellers-for-tablet {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     justify-content: space-between;
   }
+
   .top-sellers-comment-tablet {
     display: block;
     margin-top: 20px;
@@ -120,6 +137,7 @@
     color: var(--primary-text-color);
     max-width: 306px;
   }
+
   .buy-button-brand {
     display: flex;
     margin-top: 20px;
@@ -137,11 +155,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .buy-button-brand:hover {
     color: var(--primary-brand-color);
     background-color: var(--secondary-brand-color);
   }
 }
+
 /* DESKTOP */
 @media screen and (min-width: 1200px) {
   .top-sellers-list {
@@ -149,17 +169,21 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
   .top-sellers-showcase {
     flex-basis: calc((100% - 2 * 32px) / 3);
   }
+
   .top-sellers-showcase :last-child {
     margin-right: 0;
   }
+
   .top-sellers-showcase img {
     max-width: 368px;
     height: 464px;
     border-radius: 15px;
   }
+
   .top-sellers-comment-tablet {
     display: block;
     margin-top: 20px;
@@ -172,6 +196,7 @@
     max-width: 407px;
   }
 }
+
 /* MODAL */
 
 .order-modal_window {
@@ -208,21 +233,25 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .order-modal_window-close-icon {
   display: block;
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   fill: currentColor;
+  border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .order-modal_window-close-icon:hover,
 .order-modal_window-close-icon:focus {
   color: var(--primary-brand-color);
   background-color: #fcf1e0;
 }
+
 .order-modal-title {
   margin-top: 0;
   margin-bottom: 32px;
@@ -234,11 +263,13 @@
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
+
 .akcent-title {
   color: var(--primary-brand-color);
 }
 
 /* SLIDER */
+
 /*  .slick-dotted.slick-slider*/
 .order-swiper-wrapper {
   width: 100%;
@@ -265,7 +296,6 @@
   width: 231px;
   height: 257px;
   margin: 0 auto;
-
   border-radius: 15px;
 }
 
@@ -276,13 +306,13 @@
   }
 }
 
-.box-test {
+.order-slider-card {
   height: 100%;
   background-color: var(--inverted-text-color);
 }
 
 @media screen and (min-width: 768px) {
-  .box-test {
+  .order-slider-card {
     width: 160px;
     background-color: var(--inverted-text-color);
   }
@@ -292,7 +322,11 @@
   position: relative;
   padding: 32px 32px 28px 32px;
   height: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
 }
+
 
 @media screen and (min-width: 768px) {
   .order-slider-image {
@@ -305,21 +339,25 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
   justify-content: center;
   padding: 8px 0px;
   width: 97px;
-
   font-weight: 600;
+  border-radius: 100px;
+  cursor: pointer;
   background: var(--light-background-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 100px;
+
+}
+
+.weight-selection:hover,
+.weight-selection:focus {
+  background-color: var(--secondary-brand-color);
 }
 
 @media screen and (min-width: 768px) {
   .weight-selection {
-    /* padding: 8px 29px; */
     font-size: 14px;
     line-height: 1.21;
   }
@@ -348,25 +386,29 @@
   background-color: var(--primary-brand-color);
   background: rgba(17, 17, 17, 0.553);
 }
+
 .order-slider .swiper-pagination-bullet-active {
   width: 28px;
   height: 13px;
   border-radius: 32px;
-  background: #fd9222;
+  background: var(--primary-brand-color);
 }
+
 .order-modal-form {
   top: 32px;
 }
-.customer-form-field {
-}
+
+
 .form-field-tablet {
   display: flex;
   flex-wrap: wrap;
 }
+
 .form-field {
   width: 100%;
   margin-bottom: 18px;
 }
+
 .customer-form-label {
   display: block;
   font-weight: 500;
@@ -376,6 +418,7 @@
   color: var(--primary-text-color);
   margin-bottom: 4px;
 }
+
 .customer-form-input {
   width: 100%;
   height: 40px;
@@ -386,6 +429,7 @@
   padding: 14px 18px 14px 18px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .customer-form-input::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -393,10 +437,13 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+
+.customer-form-input:hover,
 .customer-form-input:focus {
   outline: none;
   border-color: var(--primary-brand-color);
 }
+
 .customer-form-input_for-number {
   width: 100%;
   height: 40px;
@@ -406,6 +453,7 @@
   padding-left: 106px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .customer-form-input_for-number::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -413,34 +461,58 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+
 .customer-form-input_for-number:focus {
   outline: none;
   border-color: var(--primary-brand-color);
 }
+
 .country-code {
   margin-top: 4px;
   display: block;
   position: relative;
 }
-.flag-icon {
+
+.code-input {
   position: absolute;
-  display: block;
-  top: 0;
-  left: 18px;
+  display: flex;
+  align-items: center;
+  top: 8px;
+  height: 25px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 18px;
+  padding-right: 8px;
+  border-right: 1.5px solid rgba(33, 33, 33, 0.2);
 }
+
+.ua-code {
+  padding-left: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1/21;
+  color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .code-input {
+    border-right: 3px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
 .card-code {
   margin-top: 4px;
   display: block;
   position: relative;
 }
+
 .mastercard-icon {
   position: absolute;
   display: block;
   top: 18px;
   right: 16px;
 }
-.comment {
-}
+
 .comment-input {
   resize: none;
   padding: 8px 16px;
@@ -455,6 +527,7 @@
   background-color: var(--light-background-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .comment-input::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -462,10 +535,12 @@
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+
 .comment-input:focus {
   outline: none;
   border-color: var(--primary-brand-color);
 }
+
 .modal-button-brand {
   margin-top: 18px;
   margin-left: auto;
@@ -484,10 +559,12 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-button-brand:hover {
   color: var(--primary-brand-color);
   background-color: #fcf1e0;
 }
+
 /* MODAL TABLET */
 @media screen and (min-width: 768px) {
   .form-field-tablet {
@@ -495,6 +572,4 @@
     flex-wrap: nowrap;
     gap: 21px;
   }
-}
-
 }
