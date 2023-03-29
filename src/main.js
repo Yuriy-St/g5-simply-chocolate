@@ -85,26 +85,26 @@ $("#video-modal").on("show.bs.modal", function (e) {
     getVideos();
 });
 
-// slider
-$('.responsive').slick({
+// general slider params
+const generalSliderValues = {
   prevArrow: false,
   nextArrow: false,
-  dots: true,
   infinite: false,
   speed: 300,
   adaptiveHeight: true,
-  slidesToScroll: 1,
-  slidesToShow: 3,
-  variableWidth: false, 
+  variableWidth: false,
+};
 
-  responsive: [
+const responsiveSliderPar = {
+  responsiveSliders: [
     {
       breakpoint: 1200,
       settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       },
     },
+
     {
       breakpoint: 768,
       settings: {
@@ -112,115 +112,134 @@ $('.responsive').slick({
       },
     },
   ],
-});
 
+  responsiveSliders2: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
+  ],
+};
+
+// slider-1
+$('.responsive').slick(
+  generalSliderValues,
+  (generalSliderValues.dots = true),
+  (generalSliderValues.slidesToShow = 3),
+  (generalSliderValues.slidesToScroll = 1),
+  (generalSliderValues.responsive = responsiveSliderPar.responsiveSliders)
+);
+
+// slider-2
+$('.responsive-sellers').slick(
+  generalSliderValues,
+  (generalSliderValues.dots = false),
+  (generalSliderValues.responsive = responsiveSliderPar.responsiveSliders2)
+);
+// ---------------------------------------------------------------------------------
 
 // modal
-  !(function (e) {
-    'function' != typeof e.matches &&
-      (e.matches =
-        e.msMatchesSelector ||
-        e.mozMatchesSelector ||
-        e.webkitMatchesSelector ||
-        function (e) {
-          for (
-            var t = this,
-              o = (t.document || t.ownerDocument).querySelectorAll(e),
-              n = 0;
-            o[n] && o[n] !== t;
+!(function (e) {
+  'function' != typeof e.matches &&
+    (e.matches =
+      e.msMatchesSelector ||
+      e.mozMatchesSelector ||
+      e.webkitMatchesSelector ||
+      function (e) {
+        for (
+          var t = this,
+            o = (t.document || t.ownerDocument).querySelectorAll(e),
+            n = 0;
+          o[n] && o[n] !== t;
 
-          )
-            ++n;
-          return Boolean(o[n]);
-        }),
-      'function' != typeof e.closest &&
-        (e.closest = function (e) {
-          for (var t = this; t && 1 === t.nodeType; ) {
-            if (t.matches(e)) return t;
-            t = t.parentNode;
-          }
-          return null;
-        });
-  })(window.Element.prototype);
+        )
+          ++n;
+        return Boolean(o[n]);
+      }),
+    'function' != typeof e.closest &&
+      (e.closest = function (e) {
+        for (var t = this; t && 1 === t.nodeType; ) {
+          if (t.matches(e)) return t;
+          t = t.parentNode;
+        }
+        return null;
+      });
+})(window.Element.prototype);
 
-  document.addEventListener('DOMContentLoaded', function () {
-    /* Записываем в переменные массив элементов-кнопок и подложку.
+document.addEventListener('DOMContentLoaded', function () {
+  /* Записываем в переменные массив элементов-кнопок и подложку.
         Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
-    var modalButtons = document.querySelectorAll('.js-open-modal'),
-      overlay = document.querySelector('.js-backdrop-modal'),
-      closeButtons = document.querySelectorAll('.js-modal-close'),
-      reviewButton = document.querySelector('.review-button');
+  var modalButtons = document.querySelectorAll('.js-open-modal'),
+    overlay = document.querySelector('.js-backdrop-modal'),
+    closeButtons = document.querySelectorAll('.js-modal-close'),
+    reviewButton = document.querySelector('.review-button');
 
-    /* Перебираем массив кнопок */
-    modalButtons.forEach(function (item) {
-      /* Назначаем каждой кнопке обработчик клика */
-      item.addEventListener('click', function (e) {
-        /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+  /* Перебираем массив кнопок */
+  modalButtons.forEach(function (item) {
+    /* Назначаем каждой кнопке обработчик клика */
+    item.addEventListener('click', function (e) {
+      /* Предотвращаем стандартное действие элемента. Так как кнопку разные
               люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
               Нужно подстраховаться. */
-        e.preventDefault();
-        document.body.classList.add('modal-open');
-        /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+      e.preventDefault();
+      document.body.classList.add('modal-open');
+      /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
               и будем искать модальное окно с таким же атрибутом. */
-        var modalId = this.getAttribute('data-modal'),
-          modalElem = document.querySelector(
-            '.modal[data-modal="' + modalId + '"]'
-          );
+      var modalId = this.getAttribute('data-modal'),
+        modalElem = document.querySelector(
+          '.modal[data-modal="' + modalId + '"]'
+        );
 
-        /* После того как нашли нужное модальное окно, добавим классы
+      /* После того как нашли нужное модальное окно, добавим классы
               подложке и окну чтобы показать их. */
-        modalElem.classList.add('active');
-        overlay.classList.add('active');
-      }); // end click
-    }); // end foreach
+      modalElem.classList.add('active');
+      overlay.classList.add('active');
+    }); // end click
+  }); // end foreach
 
-
-    // закрытие по крестику
-    closeButtons.forEach(function (item) {
-      item.addEventListener('click', function (e) {
-        var parentModal = this.closest('.modal');
-        document.body.classList.remove('modal-open');
-        parentModal.classList.remove('active');
-        overlay.classList.remove('active');
-      });
-    }); // end foreach
-
-
-    // закрытие по esc
-    document.body.addEventListener(
-      'keyup',
-      function (e) {
-        var key = e.keyCode;
-
-        if (key == 27) {
-          document.querySelector('.modal.active').classList.remove('active');
-          document.querySelector('.js-backdrop-modal').classList.remove('active');
-          document.body.classList.remove('modal-open');
-        }
-      },
-      false
-    );
-
-    // Закрытие оверлея
-    overlay.addEventListener('click', function (e) {
-      if (e.target !== e.currentTarget) {
-        return;
-      }
-      document.querySelector('.modal.active').classList.remove('active');
-      this.classList.remove('active');
+  // закрытие по крестику
+  closeButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var parentModal = this.closest('.modal');
       document.body.classList.remove('modal-open');
+      parentModal.classList.remove('active');
+      overlay.classList.remove('active');
     });
+  }); // end foreach
 
+  // закрытие по esc
+  document.body.addEventListener(
+    'keyup',
+    function (e) {
+      var key = e.keyCode;
 
-    // Закрытие первого модального когда открываю второй в Reviews
-    reviewButton.addEventListener('click', function (e) {
-      document.querySelector('.modal.active').classList.remove('active');
-      this.classList.remove('active');
-      document.body.classList.remove('modal-open');
-    })
-  }); 
+      if (key == 27) {
+        document.querySelector('.modal.active').classList.remove('active');
+        document.querySelector('.js-backdrop-modal').classList.remove('active');
+        document.body.classList.remove('modal-open');
+      }
+    },
+    false
+  );
 
+  // Закрытие оверлея
+  overlay.addEventListener('click', function (e) {
+    if (e.target !== e.currentTarget) {
+      return;
+    }
+    document.querySelector('.modal.active').classList.remove('active');
+    this.classList.remove('active');
+    document.body.classList.remove('modal-open');
+  });
 
-
-
-
+  // Закрытие первого модального когда открываю второй в Reviews
+  reviewButton.addEventListener('click', function (e) {
+    document.querySelector('.modal.active').classList.remove('active');
+    this.classList.remove('active');
+    document.body.classList.remove('modal-open');
+  });
+});

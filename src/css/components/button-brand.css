@@ -1,5 +1,7 @@
 .button-brand,
-.button-brand-ghost {
+.button-brand-ghost,
+.link-brand,
+.link-brand-ghost {
   border-radius: 999em;
   padding: 12px 28px;
   font-weight: 600;
@@ -11,29 +13,41 @@
 
 @media screen and (min-width: 768px) {
   .button-brand,
-  .button-brand-ghost {
+  .button-brand-ghost,
+  .link-brand,
+  .link-brand-ghost {
     padding: 14px 40px;
   }
 }
 
 .button-brand,
-.button-brand-ghost {
+.link-brand {
   background-color: var(--primary-brand-color);
 }
 
 .button-brand:hover,
-.button-brand:focus {
+.button-brand:focus,
+.link-brand:hover,
+.link-brand:focus {
   background-color: var(--secondary-brand-color);
   color: var(--primary-brand-color);
 }
 
-.button-brand-ghost {
+.button-brand-ghost,
+.link-brand-ghost {
   background-color: transparent;
   border: 1px solid var(--white-color);
 }
 
 .button-brand-ghost:hover,
-.button-brand-ghost:focus {
+.button-brand-ghost:focus,
+.link-brand-ghost:hover,
+.link-brand-ghost:focus {
   color: var(--primary-brand-color);
   border-color: var(--primary-brand-color);
+}
+
+.link-brand:hover,
+.link-brand-ghost:hover {
+  cursor: pointer;
 }
