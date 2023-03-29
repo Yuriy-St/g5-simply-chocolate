@@ -165,48 +165,48 @@
   }
 }
 
-.social-mob-link-header {
+.social-link-header.instagram {
   display: block;
   width: 22px;
   height: 22px;
 }
 
+.social-link-header.twitter {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
 @media screen and (min-width: 768px) {
-  .social-mob-link-header {
+  .social-link-header {
     width: 24px;
     height: 24px;
   }
 }
 
-.social-mob-link-header.twitter {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
-
-.social-mob-link-icon {
+.social-link-icon {
   fill: var(--inverted-text-color);
   transition: fill var(--transition-dur-and-func);
 }
 
-.social-mob-link-icon.instagram {
+.social-link-icon.instagram {
   width: 22px;
   height: 22px;
 }
 
-.social-mob-link-icon.twitter {
+.social-link-icon.twitter {
   width: 20px;
   height: 20px;
 }
 
-.social-mob-link-icon:focus,
-.social-mob-link-icon:hover {
+.social-link-icon:focus,
+.social-link-icon:hover {
   fill: var(--primary-brand-color);
 }
 
 @media screen and (min-width: 768px) {
-  .social-mob-link-icon.instagram,
-  .social-mob-link-icon.twitter {
+  .social-link-icon.instagram,
+  .social-link-icon.twitter {
     width: 24px;
     height: 24px;
   }
@@ -297,20 +297,10 @@
   gap: 137px;
 }
 
-.social-desc-link-header {
-  display: block;
-  width: 24px;
-  height: 24px;
-}
-
-.social-desc-link-header:focus,
-.social-desc-link-header:hover {
-  color: var(--primary-brand-color);
-}
-
-.social-desc-link-icon:focus,
-.social-desc-link-icon:hover {
-  fill: var(--primary-brand-color);
+@media screen and (min-width: 1200px) {
+  .social-link-icon {
+    fill: var(--primary-text-color);
+  }
 }
 
 @media screen and (max-width: 1199px) {
