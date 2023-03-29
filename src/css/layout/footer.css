@@ -133,6 +133,7 @@
 .foot-without-nav::after {
     position: absolute;
     left: auto;
+    right: auto;
     top: 224px;
     display: block;
     content: "";
