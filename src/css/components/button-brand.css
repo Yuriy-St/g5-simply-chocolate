@@ -1,12 +1,24 @@
-.button-brand {
+.button-brand,
+.button-brand-ghost {
   border-radius: 999em;
   padding: 12px 28px;
-  background-color: var(--primary-brand-color);
   font-weight: 600;
   line-height: 1.21;
   color: var(--white-color);
   transition: background-color var(--transition-dur-and-func),
-    color var(--transition-dur-and-func);
+    color var(--transition-dur-and-func), border var(--transition-dur-and-func);
+}
+
+@media screen and (min-width: 768px) {
+  .button-brand,
+  .button-brand-ghost {
+    padding: 14px 40px;
+  }
+}
+
+.button-brand,
+.button-brand-ghost {
+  background-color: var(--primary-brand-color);
 }
 
 .button-brand:hover,
@@ -15,8 +27,13 @@
   color: var(--primary-brand-color);
 }
 
-@media screen and (min-width: 768px) {
-  .button-brand {
-    padding: 14px 40px;
-  }
+.button-brand-ghost {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+}
+
+.button-brand-ghost:hover,
+.button-brand-ghost:focus {
+  color: var(--primary-brand-color);
+  border-color: var(--primary-brand-color);
 }
