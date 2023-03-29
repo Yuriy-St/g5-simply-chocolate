@@ -3,7 +3,7 @@
  * Get videos on load
  */
 (function () {
-    getVideos();
+  getVideos();
 })();
 
 /**
@@ -12,25 +12,25 @@
  * iframe video.
  */
 function getVideos() {
-    var v = document.getElementsByClassName("youtube-player");
-    for (var n = 0; n < v.length; n++) {
-      var p = document.createElement("div");
-      p.classList.add('play-img-wrapper');
-        var id = v[n].getAttribute("data-id");
+  var v = document.getElementsByClassName('youtube-player');
+  for (var n = 0; n < v.length; n++) {
+    var p = document.createElement('div');
+    p.classList.add('play-img-wrapper');
+    var id = v[n].getAttribute('data-id');
 
-        var placeholder = v[n].hasAttribute("data-thumbnail")
-            ? v[n].getAttribute("data-thumbnail")
-            : "";
+    var placeholder = v[n].hasAttribute('data-thumbnail')
+      ? v[n].getAttribute('data-thumbnail')
+      : '';
 
-        if (placeholder.length) p.innerHTML = createCustomThumbnail(placeholder);
-        else p.innerHTML = createThumbail(id);
+    if (placeholder.length) p.innerHTML = createCustomThumbnail(placeholder);
+    else p.innerHTML = createThumbail(id);
 
-        v[n].appendChild(p);
-        p.addEventListener("click", function () {
-            var parent = this.parentNode;
-            createIframe(parent, parent.getAttribute("data-id"));
-        });
-    }
+    v[n].appendChild(p);
+    p.addEventListener('click', function () {
+      var parent = this.parentNode;
+      createIframe(parent, parent.getAttribute('data-id'));
+    });
+  }
 }
 
 /**
@@ -39,11 +39,11 @@ function getVideos() {
  * @return {string} The HTML containing the <img> tag
  */
 function createCustomThumbnail(url) {
-    return (
-        '<img class="youtube-thumbnail" src="' +
-        url +
-        '" alt="Youtube Preview" /><div class="youtube-play-btn"></div>'
-    );
+  return (
+    '<img class="youtube-thumbnail" src="' +
+    url +
+    '" alt="Youtube Preview" /><div class="youtube-play-btn"></div>'
+  );
 }
 
 /**
@@ -52,38 +52,38 @@ function createCustomThumbnail(url) {
  * @return {string} The HTML containing the <img> tag
  */
 function createThumbail(id) {
-    return (
-        '<img class="youtube-thumbnail" src="//i.ytimg.com/vi_webp/' +
-        id +
-        '/maxresdefault.webp" alt="Youtube Preview"><div class="youtube-play-btn"></div>'
-    );
+  return (
+    '<img class="youtube-thumbnail" src="//i.ytimg.com/vi_webp/' +
+    id +
+    '/maxresdefault.webp" alt="Youtube Preview"><div class="youtube-play-btn"></div>'
+  );
 }
 
 /**
  * Create and load iframe in Youtube container
  **/
 function createIframe(v, id) {
-    var iframe = document.createElement("iframe");
-    console.log(v);
-    iframe.setAttribute(
-        "src",
-        "//www.youtube.com/embed/" +
-            id +
-            "?autoplay=1&color=white&autohide=2&modestbranding=1&border=0&wmode=opaque&enablejsapi=1&showinfo=0&rel=0"
-    );
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("class", "youtube-iframe");
-    v.firstChild.replaceWith(iframe);
+  var iframe = document.createElement('iframe');
+  console.log(v);
+  iframe.setAttribute(
+    'src',
+    '//www.youtube.com/embed/' +
+      id +
+      '?autoplay=1&color=white&autohide=2&modestbranding=1&border=0&wmode=opaque&enablejsapi=1&showinfo=0&rel=0'
+  );
+  iframe.setAttribute('frameborder', '0');
+  iframe.setAttribute('class', 'youtube-iframe');
+  v.firstChild.replaceWith(iframe);
 }
 
 /** Pause video on modal close **/
-$("#video-modal").on("hidden.bs.modal", function (e) {
-    $(this).find("iframe").remove();
+$('#video-modal').on('hidden.bs.modal', function (e) {
+  $(this).find('iframe').remove();
 });
 
 /** Pause video on modal close **/
-$("#video-modal").on("show.bs.modal", function (e) {
-    getVideos();
+$('#video-modal').on('show.bs.modal', function (e) {
+  getVideos();
 });
 
 // general slider params
@@ -96,23 +96,23 @@ const generalSliderValues = {
   variableWidth: false,
 };
 
-  const responsiveSliderPar = {
+const responsiveSliderPar = {
   responsiveSliders: [
-        {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-        },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      },
+    },
 
     {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-            },
-        },
-    ],
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 
   responsiveSliders2: [
     {
@@ -137,16 +137,16 @@ $('.responsive').slick(
 
 // Gallery
 const lightbox = new SimpleLightbox('.gallery a', {
-    captionDelay: 250,
-    captionsData: 'alt',
+  captionDelay: 250,
+  captionsData: 'alt',
 });
 
 (() => {
-    const images = document.querySelectorAll('.gallery-link');
-    images.forEach(el => {
-        const img = el.querySelector('img');
-        el.href = a;
-    });
+  const images = document.querySelectorAll('.gallery-link');
+  images.forEach(el => {
+    const img = el.querySelector('img');
+    el.href = a;
+  });
 })();
 // slider-2
 $('.responsive-sellers').slick(
@@ -257,10 +257,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.classList.remove('modal-open');
   });
 });
-
-
-
-
 
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
