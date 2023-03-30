@@ -53,7 +53,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script type="module" crossorigin src="/g5-simply-chocolate/assets/index-becc4888.js"></script>
-    <link rel="stylesheet" href="/g5-simply-chocolate/assets/index-d89253d4.css">
+    <link rel="stylesheet" href="/g5-simply-chocolate/assets/index-5eeca591.css">
   </head>
   <body>
     <!-- Header -->
@@ -1049,19 +1049,39 @@
 
     <form class="reviews-modal-form" name="reviews" id="test">
       <div class="reviews-modal-wrapper">
-        <label class="visually-hidden" for="name">Name</label>
-        <input id="name" class="reviews-modal-input" type="text" name="name" placeholder="Name" required />
+        <label class="visually-hidden" for="reviews-name">Name</label>
+        <input
+          id="reviews-name"
+          class="reviews-modal-input"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        />
       </div>
 
       <div class="reviews-modal-wrapper">
-        <label class="visually-hidden" for="email">Email</label>
-        <input id="email" class="reviews-modal-input" type="email" name="email" placeholder="Email" required />
+        <label class="visually-hidden" for="reviews-email">Email</label>
+        <input
+          id="reviews-email"
+          class="reviews-modal-input"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
       </div>
 
       <div class="reviews-modal-wrapper review-modal-phone-wrapper">
-        <label class="visually-hidden" for="phone">Phone number</label>
-        <input id="phone" class="reviews-modal-input phone-input" type="number" name="phone" placeholder="Phone number"
-          required />
+        <label class="visually-hidden" for="reviews-phone">Phone number</label>
+        <input
+          id="reviews-phone"
+          class="reviews-modal-input phone-input"
+          type="number"
+          name="phone"
+          placeholder="Phone number"
+          required
+        />
 
         <div class="phone-inner">
           <svg class="phone-inner-icon">
@@ -1072,8 +1092,12 @@
       </div>
 
       <label class="visually-hidden" for="phone">Your review</label>
-      <textarea id="review-about" class="reviews-modal-textarea" type="text" name="review-about"
-        placeholder="Enter text"></textarea>
+      <textarea
+        id="review-about"
+        class="reviews-modal-textarea"
+        name="review-about"
+        placeholder="Enter text"
+      ></textarea>
 
       <button type="submit" class="review-modal-button js-open-modal review-button" data-modal="2">
         Send
@@ -1111,9 +1135,14 @@
       <div class="order-swiper-slide">
         <div class="order-slider-card">
           <div class="order-slider-image">
-            <img class="slider-demonstrate" srcset="/g5-simply-chocolate/assets/chocolate-desktop@2x-79117825.jpg 2x"
-              src="data:image/jpeg;base64,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" alt="kinder-chocolate-white-chocolate-chocolate-nuts"
-              width="167" height="148" />
+            <img
+              class="slider-demonstrate"
+              srcset="/g5-simply-chocolate/assets/chocolate-desktop@2x-79117825.jpg 2x"
+              src="data:image/jpeg;base64,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"
+              alt="kinder-chocolate-white-chocolate-chocolate-nuts"
+              width="167"
+              height="148"
+            />
             <div class="weight-selection">100 g</div>
           </div>
         </div>
@@ -1122,9 +1151,14 @@
       <div class="order-swiper-slide">
         <div class="order-slider-card">
           <div class="order-slider-image">
-            <img class="slider-demonstrate" srcset="/g5-simply-chocolate/assets/chocolate-white-desktop@2x-4e3e2ef6.jpg 2x"
-              src="data:image/jpeg;base64,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" alt="white-chocolate-cocoa-bean-chocolate-cake"
-              width="167" height="148" />
+            <img
+              class="slider-demonstrate"
+              srcset="/g5-simply-chocolate/assets/chocolate-white-desktop@2x-4e3e2ef6.jpg 2x"
+              src="data:image/jpeg;base64,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"
+              alt="white-chocolate-cocoa-bean-chocolate-cake"
+              width="167"
+              height="148"
+            />
             <div class="weight-selection">200 g</div>
           </div>
         </div>
@@ -1133,8 +1167,14 @@
       <div class="order-swiper-slide">
         <div class="order-slider-card">
           <div class="order-slider-image">
-            <img class="slider-demonstrate" srcset="/g5-simply-chocolate/assets/chocolate-bar-desktop@2x-8d917536.jpg 2x"
-              src="data:image/jpeg;base64,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" alt="dark-chocolate" width="167" height="148" />
+            <img
+              class="slider-demonstrate"
+              srcset="/g5-simply-chocolate/assets/chocolate-bar-desktop@2x-8d917536.jpg 2x"
+              src="data:image/jpeg;base64,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"
+              alt="dark-chocolate"
+              width="167"
+              height="148"
+            />
             <div class="weight-selection">300 g</div>
           </div>
         </div>
@@ -1144,12 +1184,25 @@
     <form class="order-modal-form">
       <div class="customer-form-field">
         <div class="form-field">
-          <label for="name" class="customer-form-label">Personal information
-            <div class="form-field-tablet">
-              <input type="text" class="customer-form-input" name="name" id="name" placeholder="Name" required/>
-              <input type="text" class="customer-form-input" name="surname" id="surname" placeholder="Surname" required/>
-            </div>
+          <label for="name" class="customer-form-label"
+            >Personal information
           </label>
+          <div class="form-field-tablet">
+            <input
+              type="text"
+              class="customer-form-input"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="customer-form-input"
+              name="surname"
+              id="surname"
+              placeholder="Surname"
+            />
+          </div>
         </div>
         <div class="form-field">
           <label for="mail" class="customer-form-label">Email
@@ -1157,27 +1210,40 @@
           </label>
         </div>
         <div class="form-field">
-          <label for="phone" class="customer-form-label">Phone number
-            <span class="country-code">
-              <input type="tel" class="customer-form-input_for-number" name="phone" id="phone"
-                placeholder="Phone number" required/>
-              <div class="code-input"><svg class="flag-icon" width="24" height="24">
-                  <use href="../img/sprite.svg#flag-ua"></use>
+          <label for="phone" class="customer-form-label"
+            >Phone number
+            <div class="customer-form-phone-wrapper">
+              <div class="phone-inner">
+                <svg class="phone-inner-icon">
+                  <use href="/g5-simply-chocolate/assets/sprite-673ed965.svg#flag-ua"></use>
                 </svg>
-                <span class="ua-code">+380</span>
+                <span class="phone-inner-code">+380</span>
               </div>
-            </span>
+
+              <input
+                type="tel"
+                class="customer-form-input_for-number"
+                name="phone"
+                id="phone"
+                placeholder="Phone number"
+              />
+            </div>
           </label>
         </div>
         <div class="form-field">
-          <label for="number" class="customer-form-label">Card number
-            <span class="card-code">
-              <input type="number" class="customer-form-input" name="number" id="number" placeholder="Enter card" required/>
-              <svg class="mastercard-icon" width="32" height="21">
-                <use href="../img/sprite.svg#mastercard"></use>
-              </svg>
-            </span>
-          </label>
+          <label for="number" class="customer-form-label">Card number </label>
+          <div class="customer-form-input_for_pay">
+            <input
+              type="number"
+              class="customer-form-input"
+              name="number"
+              id="number"
+              placeholder="Enter card"
+            />
+            <svg class="mastercard-icon" width="32" height="21">
+              <use href="/g5-simply-chocolate/assets/sprite-673ed965.svg#mastercard"></use>
+            </svg>
+          </div>
         </div>
         <div class="form-field">
           <label for="comment" class="customer-form-label">Comment</label>
@@ -1192,21 +1258,35 @@
 
   <!-- put your modals in here -->
 
-<!-- Модальное окно в subscribe "Explore our new chocolate first"
+  <!-- Модальное окно в subscribe "Explore our new chocolate first"
         <div class="backdrop-modals is-hidden acвtive" data-modal="9">-->
   <div class="subscribe-modal general-modals modal modal9" data-modal="9">
-
     <picture class="subscribe-modal-img">
-      <source srcset="/g5-simply-chocolate/assets/review-desktop-99dd9415.jpg 1x, /g5-simply-chocolate/assets/review-desktop@2x-722e405a.jpg 2x" media="(min-width: 768px)">
-      <img class="subscribe-modal-img" srcset="/g5-simply-chocolate/assets/review-mobile-91ffaf73.jpg 1x, /g5-simply-chocolate/assets/review-mobile@2x-ffb6de54.jpg 2x" src="/g5-simply-chocolate/assets/review-mobile-91ffaf73.jpg"
-        alt="Chocolate">
+      <source
+        srcset="/g5-simply-chocolate/assets/review-desktop-99dd9415.jpg 1x, /g5-simply-chocolate/assets/review-desktop@2x-722e405a.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        class="subscribe-modal-img"
+        srcset="/g5-simply-chocolate/assets/review-mobile-91ffaf73.jpg 1x, /g5-simply-chocolate/assets/review-mobile@2x-ffb6de54.jpg 2x"
+        src="/g5-simply-chocolate/assets/review-mobile-91ffaf73.jpg"
+        alt="Chocolate"
+      />
     </picture>
 
-    <h3 class="form-title">Explore our<br><span> new chocolate</span> first!</h3>
+    <h3 class="form-title">
+      Explore our<br /><span> new chocolate</span> first!
+    </h3>
     <form class="submit-form" name="submit-form" autocomplete="on">
       <div class="submit-form-input">
-        <input class="foot-input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          placeholder="Enter your email" required>
+        <input
+          class="foot-input"
+          type="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder="Enter your email"
+          required
+        />
 
         <button class="submit-btn button-brand" type="submit">Submit</button>
       </div>
@@ -1217,10 +1297,9 @@
         </svg>
       </button>
     </form>
+  </div>
 </div>
 
-
-</div>
 
     <!-- Scripts -->
     
