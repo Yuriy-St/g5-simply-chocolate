@@ -1,11 +1,32 @@
-.container {
-  max-width: 1200px;
+.container,
+.container-adaptive {
   padding: 0 20px;
   margin: 0 auto;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 @media screen and (min-width: 768px) {
-  .container {
+  .container,
+  .container-adaptive {
     padding: 0 32px;
+  }
+}
+
+.container-adaptive {
+  max-width: 375px;
+}
+
+@media (min-width: 768px) {
+  .container-adaptive {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-adaptive {
+    max-width: 1200px;
   }
 }
