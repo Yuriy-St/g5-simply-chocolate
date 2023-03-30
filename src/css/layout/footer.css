@@ -132,11 +132,17 @@
   display: block;
   align-items: center;
   content: '';
-  width: 335px;
+  width: 280px;
   height: 1px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transform: rotate(180deg);
   transition-property: color;
+}
+
+@media screen and (min-width: 375px) {
+  .foot-without-nav::after {
+    width: 335px;
+  }
 }
 
 @media (min-width: 768px) {
