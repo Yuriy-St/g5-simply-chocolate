@@ -1,37 +1,91 @@
-<section class="how-its-made">
-  <div class="">
-    <h2 class="">HOW IT’S MADE?</h2>
-    <div class="frame_blc">
-      <iframe
-        width="600"
-        height="400"
-        src="https://www.youtube.com/embed/JtaNNcmdA7g"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+<section id="how-its-made" class="how-its-made section">
+  <div class="container">
+    <h2 class="secondary-title">How it's<span class="name"> made?</span></h2>
+    <div class="chocolate">
+      <div class="frame_wrapper">
+        <iframe
+          id="iframe-hide"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/s0EbAUGftug"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="frame-image-wrapper">
+          <img
+            class="frame-image-768"
+            srcset="./img/how-made/how-made-mobile@2x.jpg 2x"
+            src="./img/how-made/how-made-mobile.jpg"
+            alt="background how its made"
+          />
+
+          <img
+            class="frame-image-768up"
+            srcset="./img/how-made/how-made-desktop@2x.jpg 2x"
+            src="./img/how-made/how-made-desktop.jpg"
+            alt="background how its made"
+          />
+
+          <button
+            class="how-its-made-play-button"
+            onclick="parent.open('https://www.youtube.com/embed/s0EbAUGftug')"
+          >
+            <svg class="play-icon-svg">
+              <use href="./img/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- TEXT -->
+      <div class="container-section">
+        <h3 class="section-subtitle">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+        <ul class="section-text list">
+          <li class="disc">
+            <svg class="icon-disc">
+              <use href="./img/sprite.svg#disc"></use>
+            </svg>
+            <p>
+              Heat the milk in a saucepan without bringing it to a boil. Add
+              sugar and cocoa powd er.
+            </p>
+          </li>
+          <li class="disc">
+            <svg class="icon-disc">
+              <use href="./img/sprite.svg#disc"></use>
+            </svg>
+            <p>At the same time, prepare a water bath. Melt the butter on it</p>
+          </li>
+          <li class="disc">
+            <svg class="icon-disc">
+              <use href="./img/sprite.svg#disc"></use>
+            </svg>
+            <p>
+              "Mix" the milk mixture and already liquid butter. Mix thoroughly
+              with a silicone spatula so that the mass becomes uniform and
+              silky.
+            </p>
+          </li>
+          <li class="disc">
+            <svg class="icon-disc">
+              <use href="./img/sprite.svg#disc"></use>
+            </svg>
+            <p>Heat the mixture over low heat, letting it barely boil.</p>
+          </li>
+          <li class="disc">
+            <svg class="icon-disc">
+              <use href="./img/sprite.svg#disc"></use>
+            </svg>
+            <p>
+              Pour the chocolate into special containers (can be replaced with
+              ice molds). Allow to cool and harden.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <h3 class="">
-      Try our chocolates today and discover the perfect balance of flavor
-    </h3>
-    <ul class="">
-      <li>
-        Heat the milk in a saucepan without bringing it to a boil. Add sugar and
-        cocoa powder.
-      </li>
-      <li>
-        At the same time, prepare a water bath. Melt the butter on it./li>
-      </li>
-      <li>
-        "Mix" the milk mixture and already liquid butter. Mix thoroughly with a
-        silicone spatula so that the mass becomes uniform and silky.
-      </li>
-      <li>Heat the mixture over low heat, letting it barely boil.</li>
-      <li>
-        Pour the chocolate into special containers (can be replaced with ice
-        molds). Allow to cool and harden.
-      </li>
-    </ul>
   </div>
 </section>
