@@ -13,9 +13,9 @@
 
     <form class="reviews-modal-form" name="reviews" id="test">
       <div class="reviews-modal-wrapper">
-        <label class="visually-hidden" for="name">Name</label>
+        <label class="visually-hidden" for="reviews-name">Name</label>
         <input
-          id="name"
+          id="reviews-name"
           class="reviews-modal-input"
           type="text"
           name="name"
@@ -25,9 +25,9 @@
       </div>
 
       <div class="reviews-modal-wrapper">
-        <label class="visually-hidden" for="email">Email</label>
+        <label class="visually-hidden" for="reviews-email">Email</label>
         <input
-          id="email"
+          id="reviews-email"
           class="reviews-modal-input"
           type="email"
           name="email"
@@ -37,9 +37,9 @@
       </div>
 
       <div class="reviews-modal-wrapper review-modal-phone-wrapper">
-        <label class="visually-hidden" for="phone">Phone number</label>
+        <label class="visually-hidden" for="reviews-phone">Phone number</label>
         <input
-          id="phone"
+          id="reviews-phone"
           class="reviews-modal-input phone-input"
           type="number"
           name="phone"
@@ -59,7 +59,6 @@
       <textarea
         id="review-about"
         class="reviews-modal-textarea"
-        type="text"
         name="review-about"
         placeholder="Enter text"
       ></textarea>
@@ -98,7 +97,7 @@
   <div class="order-modal_window general-modals modal modal3" data-modal="3">
     <button type="button" class="order-modal_window-close js-modal-close">
       <svg class="order-modal_window-close-icon">
-        <use href="../img/sprite.svg#close"></use>
+        <use href="./img/sprite.svg#close"></use>
       </svg>
     </button>
     <h3 class="order-modal-title"><span class="akcent-title">Buy</span> now</h3>
@@ -110,8 +109,8 @@
           <div class="order-slider-image">
             <img
               class="slider-demonstrate"
-              srcset="../img/buy-now/chocolate-desktop@2x.jpg 2x"
-              src="../img/buy-now/chocolate-desktop.jpg"
+              srcset="./img/buy-now/chocolate-desktop@2x.jpg 2x"
+              src="./img/buy-now/chocolate-desktop.jpg"
               alt="kinder-chocolate-white-chocolate-chocolate-nuts"
               width="167"
               height="148"
@@ -126,8 +125,8 @@
           <div class="order-slider-image">
             <img
               class="slider-demonstrate"
-              srcset="../img/buy-now/chocolate-white-desktop@2x.jpg 2x"
-              src="../img/buy-now/chocolate-white-desktop.jpg"
+              srcset="./img/buy-now/chocolate-white-desktop@2x.jpg 2x"
+              src="./img/buy-now/chocolate-white-desktop.jpg"
               alt="white-chocolate-cocoa-bean-chocolate-cake"
               width="167"
               height="148"
@@ -142,8 +141,8 @@
           <div class="order-slider-image">
             <img
               class="slider-demonstrate"
-              srcset="../img/buy-now/chocolate-bar-desktop@2x.jpg 2x"
-              src="../img/buy-now/chocolate-bar-desktop.jpg"
+              srcset="./img/buy-now/chocolate-bar-desktop@2x.jpg 2x"
+              src="./img/buy-now/chocolate-bar-desktop.jpg"
               alt="dark-chocolate"
               width="167"
               height="148"
@@ -159,23 +158,23 @@
         <div class="form-field">
           <label for="name" class="customer-form-label"
             >Personal information
-            <div class="form-field-tablet">
-              <input
-                type="text"
-                class="customer-form-input"
-                name="name"
-                id="name"
-                placeholder="Name"
-              />
-              <input
-                type="text"
-                class="customer-form-input"
-                name="surname"
-                id="surname"
-                placeholder="Surname"
-              />
-            </div>
           </label>
+          <div class="form-field-tablet">
+            <input
+              type="text"
+              class="customer-form-input"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="customer-form-input"
+              name="surname"
+              id="surname"
+              placeholder="Surname"
+            />
+          </div>
         </div>
         <div class="form-field">
           <label for="mail" class="customer-form-label"
@@ -190,15 +189,16 @@
           </label>
         </div>
         <div class="form-field">
-          <!-- <div class="phone-inner">
-                  <svg class="phone-inner-icon">
-                    <use href="./img/sprite.svg#flag-ua"></use>
-                  </svg>
-                  <span class="phone-inner-code">+380</span>
-                </div> -->
           <label for="phone" class="customer-form-label"
             >Phone number
-            <span class="country-code">
+            <div class="customer-form-phone-wrapper">
+              <div class="phone-inner">
+                <svg class="phone-inner-icon">
+                  <use href="./img/sprite.svg#flag-ua"></use>
+                </svg>
+                <span class="phone-inner-code">+380</span>
+              </div>
+
               <input
                 type="tel"
                 class="customer-form-input_for-number"
@@ -206,28 +206,23 @@
                 id="phone"
                 placeholder="Phone number"
               />
-              <svg class="flag-icon" width="72" height="40">
-                <use href="../img/sprite.svg#flag-code"></use>
-              </svg>
-            </span>
+            </div>
           </label>
         </div>
         <div class="form-field">
-          <label for="number" class="customer-form-label"
-            >Card number
-            <span class="card-code">
-              <input
-                type="number"
-                class="customer-form-input"
-                name="number"
-                id="number"
-                placeholder="Enter card"
-              />
-              <svg class="mastercard-icon" width="32" height="21">
-                <use href="../img/sprite.svg#mastercard"></use>
-              </svg>
-            </span>
-          </label>
+          <label for="number" class="customer-form-label">Card number </label>
+          <div class="customer-form-input_for_pay">
+            <input
+              type="number"
+              class="customer-form-input"
+              name="number"
+              id="number"
+              placeholder="Enter card"
+            />
+            <svg class="mastercard-icon" width="32" height="21">
+              <use href="./img/sprite.svg#mastercard"></use>
+            </svg>
+          </div>
         </div>
         <div class="form-field">
           <label for="comment" class="customer-form-label">Comment</label>
@@ -248,25 +243,41 @@
 
   <!-- put your modals in here -->
 
-<!-- Модальное окно в subscribe "Explore our new chocolate first"
+  <!-- Модальное окно в subscribe "Explore our new chocolate first"
         <div class="backdrop-modals is-hidden acвtive" data-modal="9">-->
   <div class="subscribe-modal general-modals modal modal9" data-modal="9">
-
     <picture class="subscribe-modal-img">
-      <source srcset="
-                                  ./img/explore/review-desktop.jpg  1x,
-                                  ./img/explore/review-desktop@2x.jpg  2x" media="(min-width: 768px)">
-      <img class="subscribe-modal-img" srcset="
-                                  ./img/explore/review-mobile.jpg  1x,
-                                  ./img/explore/review-mobile@2x.jpg  2x" src="./img/explore/review-mobile.jpg"
-        alt="Chocolate">
+      <source
+        srcset="
+          ./img/explore/review-desktop.jpg    1x,
+          ./img/explore/review-desktop@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="subscribe-modal-img"
+        srcset="
+          ./img/explore/review-mobile.jpg    1x,
+          ./img/explore/review-mobile@2x.jpg 2x
+        "
+        src="./img/explore/review-mobile.jpg"
+        alt="Chocolate"
+      />
     </picture>
 
-    <h3 class="form-title">Explore our<br><span> new chocolate</span> first!</h3>
+    <h3 class="form-title">
+      Explore our<br /><span> new chocolate</span> first!
+    </h3>
     <form class="submit-form" name="submit-form" autocomplete="on">
       <div class="submit-form-input">
-        <input class="foot-input" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          placeholder="Enter your email" required>
+        <input
+          class="foot-input"
+          type="email"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          placeholder="Enter your email"
+          required
+        />
 
         <button class="submit-btn button-brand" type="submit">Submit</button>
       </div>
@@ -277,7 +288,5 @@
         </svg>
       </button>
     </form>
-</div>
-
-
+  </div>
 </div>

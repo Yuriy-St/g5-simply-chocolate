@@ -23,6 +23,8 @@
 }
 
 .reviews-title {
+  font-size: 20px;
+  line-height: 1.2;
   margin-bottom: 32px;
   text-transform: uppercase;
   text-align: center;
@@ -31,6 +33,7 @@
 @media screen and (min-width: 768px) {
   .reviews-title {
     margin-bottom: 50px;
+    font-size: 24px;
   }
 }
 
@@ -396,7 +399,7 @@
 .phone-inner-code {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.21;
+  line-height: 0;
   margin: 0 8px;
 }
 
