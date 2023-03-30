@@ -52,8 +52,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script type="module" crossorigin src="/g5-simply-chocolate/assets/index-6800008d.js"></script>
-    <link rel="stylesheet" href="/g5-simply-chocolate/assets/index-699e843d.css">
+    <script type="module" crossorigin src="/g5-simply-chocolate/assets/index-c76bfe92.js"></script>
+    <link rel="stylesheet" href="/g5-simply-chocolate/assets/index-27419847.css">
   </head>
   <body>
     <!-- Header -->
@@ -1007,7 +1007,7 @@
       <span class="modal-title-brand">our chocolate</span>
     </h2>
 
-    <form class="reviews-modal-form" name="reviews" id="test">
+    <form class="reviews-modal-form" name="reviews" id="review-modal-form">
       <div class="reviews-modal-wrapper">
         <label class="visually-hidden" for="reviews-name">Name</label>
         <input
@@ -1090,7 +1090,11 @@
   </div>
 
   <!-- top sellers - 3 -->
-  <div class="order-modal_window general-modals modal modal3" data-modal="3">
+  <div
+    class="order-modal_window general-modals modal modal3"
+    id="sellers-modal-form"
+    data-modal="3"
+  >
     <button type="button" class="order-modal_window-close js-modal-close">
       <svg class="order-modal_window-close-icon">
         <use href="/g5-simply-chocolate/assets/sprite-673ed965.svg#close"></use>
@@ -1229,10 +1233,35 @@
           ></textarea>
         </div>
         <div class="button-field">
-          <button type="submit" class="modal-button-brand">Submit</button>
+          <button
+            type="submit"
+            class="modal-button-brand"
+            id="sellers-button-1"
+          >
+            Submit
+          </button>
         </div>
       </div>
     </form>
+  </div>
+
+  <!-- sellers modal - 4 -->
+  <div
+    class="reviews-feedback-modals general-modals modal modal4"
+    data-modal="4"
+  >
+    <button class="reviews-feedback-button-close modal-close js-modal-close">
+      <svg class="reviews-feedback-modal-icon">
+        <use href="/g5-simply-chocolate/assets/sprite-673ed965.svg#close"></use>
+      </svg>
+    </button>
+    <div class="reviews-feedback-content">
+      <h2 class="reviews-feedback-modal-title">thank you!</h2>
+      <p class="reviews-feedback-modal-text">
+        We are glad that you ordered our chocolate and we are giving you a 20%
+        discount on all our products.
+      </p>
+    </div>
   </div>
 
   <!-- put your modals in here -->
