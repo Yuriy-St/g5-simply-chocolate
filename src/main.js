@@ -141,14 +141,6 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
 });
 
-(() => {
-  const images = document.querySelectorAll('.gallery-link');
-  images.forEach(el => {
-    const img = el.querySelector('img');
-    el.href = a;
-  });
-})();
-// slider-2
 $('.responsive-sellers').slick(
   generalSliderValues,
   (generalSliderValues.dots = false),
