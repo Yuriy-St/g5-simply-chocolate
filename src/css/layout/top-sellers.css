@@ -513,10 +513,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .customer-form-input_for-number {
-    padding-left: 134px;
-  }
-
   .code-input {
     padding-right: 18px;
     border-right: 3px solid rgba(33, 33, 33, 0.2);
