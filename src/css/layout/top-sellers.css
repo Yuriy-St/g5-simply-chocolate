@@ -416,8 +416,12 @@
 .order-modal-form {
   top: 32px;
 }
-
-
+.customer-form-phone-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
 .form-field-tablet {
   display: flex;
   flex-wrap: wrap;
@@ -435,7 +439,6 @@
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: var(--primary-text-color);
-  margin-bottom: 4px;
 }
 
 .customer-form-input {
@@ -471,6 +474,16 @@
   background-color: var(--light-background-color);
   padding-left: 106px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customer-form-input_for_pay {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .customer-form-input_for-number {
+    padding-left: 177px;
+  }
 }
 
 .customer-form-input_for-number::placeholder {
@@ -529,7 +542,7 @@
 }
 
 .card-code {
-  margin-top: 4px;
+  /* margin-top: 4px; */
   display: block;
   position: relative;
 }
@@ -545,6 +558,7 @@
   resize: none;
   padding: 8px 16px;
   width: 100%;
+  margin-top: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
