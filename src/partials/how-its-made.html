@@ -3,12 +3,39 @@
     <h2 class="secondary-title">How it's<span class="name"> made?</span></h2>
     <div class="chocolate">
       <div class="frame_wrapper">
-        <div class="youtube-container">
-          <div
-            class="youtube-player"
-            data-id="JtaNNcmdA7g"
-            data-thumbnail="./img/how-made/how-made-desktop.jpg"
-          ></div>
+        <iframe
+          id="iframe-hide"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/s0EbAUGftug"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="frame-image-wrapper">
+          <img
+            class="frame-image-768"
+            srcset="./img/how-made/how-made-mobile@2x.jpg 2x"
+            src="./img/how-made/how-made-mobile.jpg"
+            alt="background how its made"
+          />
+
+          <img
+            class="frame-image-768up"
+            srcset="./img/how-made/how-made-desktop@2x.jpg 2x"
+            src="./img/how-made/how-made-desktop.jpg"
+            alt="background how its made"
+          />
+
+          <button
+            class="how-its-made-play-button"
+            onclick="parent.open('https://www.youtube.com/embed/s0EbAUGftug')"
+          >
+            <svg class="play-icon-svg">
+              <use href="./img/sprite.svg#play"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <!-- TEXT -->
