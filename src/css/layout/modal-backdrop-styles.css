@@ -71,6 +71,7 @@
 .modal1.active,
 .modal2.active,
 .modal3.active,
+.modal4.active,
 .modal9.active {
   visibility: visible;
   opacity: 1;

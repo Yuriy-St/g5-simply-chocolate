@@ -156,9 +156,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Закрытие первого модального когда открываю второй в Reviews
   $(function () {
-    $('#test').submit(function (e) {
+    $('#review-modal-form').submit(function (e) {
       e.preventDefault();
       $('#review-button-1').attr('data-modal', '2').addClass('js-open-modal');
+
+      setTimeout(() => {
+        document.querySelector('.modal.active').classList.remove('active');
+        this.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        $('.reviews-feedback-modals').addClass('active');
+      }, 300);
+    });
+  });
+
+  // Закрытие первого модального когда открываю второй в Sellers
+  $(function () {
+    $('#sellers-modal-form').submit(function (e) {
+      e.preventDefault();
+      $('#sellers-button-1').attr('data-modal', '4').addClass('js-open-modal');
 
       setTimeout(() => {
         document.querySelector('.modal.active').classList.remove('active');
