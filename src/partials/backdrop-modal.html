@@ -110,21 +110,21 @@
         <div class="form-field">
           <label for="name" class="customer-form-label">Personal information
             <div class="form-field-tablet">
-              <input type="text" class="customer-form-input" name="name" id="name" placeholder="Name" />
-              <input type="text" class="customer-form-input" name="surname" id="surname" placeholder="Surname" />
+              <input type="text" class="customer-form-input" name="name" id="name" placeholder="Name" required/>
+              <input type="text" class="customer-form-input" name="surname" id="surname" placeholder="Surname" required/>
             </div>
           </label>
         </div>
         <div class="form-field">
           <label for="mail" class="customer-form-label">Email
-            <input type="email" class="customer-form-input" name="mail" id="mail" placeholder="Enter your email" />
+            <input type="email" class="customer-form-input" name="mail" id="mail" placeholder="Enter your email" required/>
           </label>
         </div>
         <div class="form-field">
           <label for="phone" class="customer-form-label">Phone number
             <span class="country-code">
               <input type="tel" class="customer-form-input_for-number" name="phone" id="phone"
-                placeholder="Phone number" />
+                placeholder="Phone number" required/>
               <div class="code-input"><svg class="flag-icon" width="24" height="24">
                   <use href="../img/sprite.svg#flag-ua"></use>
                 </svg>
@@ -136,7 +136,7 @@
         <div class="form-field">
           <label for="number" class="customer-form-label">Card number
             <span class="card-code">
-              <input type="number" class="customer-form-input" name="number" id="number" placeholder="Enter card" />
+              <input type="number" class="customer-form-input" name="number" id="number" placeholder="Enter card" required/>
               <svg class="mastercard-icon" width="32" height="21">
                 <use href="../img/sprite.svg#mastercard"></use>
               </svg>
