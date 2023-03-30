@@ -412,7 +412,8 @@
 }
 
 /* Feedback modal */
-.reviews-feedback-modals {
+.reviews-feedback-modals,
+.seller-feedback-modals {
   width: 311px;
   height: 350px;
   padding-top: 84px;
@@ -426,7 +427,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-feedback-modals {
+  .reviews-feedback-modals,
+  .seller-feedback-modals {
     display: flex;
     align-items: center;
     justify-content: flex-end;

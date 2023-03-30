@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
         document.body.classList.remove('modal-open');
-        $('.reviews-feedback-modals').addClass('active');
+        $('.seller-feedback-modals').addClass('active');
       }, 300);
     });
   });
