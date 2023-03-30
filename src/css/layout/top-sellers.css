@@ -36,7 +36,7 @@
 }
 
 .top-sellers-showcase img {
-  max-width: 368px;
+  max-width: 335px;
   height: 464px;
   border-radius: 15px;
 }
@@ -49,7 +49,7 @@
   line-height: 1.3;
   letter-spacing: -0.02em;
   color: var(--primary-text-color);
-  width: 306px;
+  
 }
 
 @media screen and (max-width: 767px) {
