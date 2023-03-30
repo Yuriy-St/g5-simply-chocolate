@@ -24,8 +24,15 @@ iframe {
   height: 500px;
   border-radius: 15px;
 }
+
 .frame_wrapper {
-  width: 335px;
+  width: 270px;
+}
+
+@media screen and (min-width: 375px) {
+  .frame_wrapper {
+    width: 335px;
+  }
 }
 
 .youtube-player {
@@ -38,7 +45,6 @@ iframe {
 
 .play-img-wrapper {
   position: relative;
-  /* height: 35px; */
   width: 100%;
 }
 
@@ -55,9 +61,8 @@ iframe {
 }
 
 .container-section {
+  max-width: 335px;
   padding: 14px 20px;
-  width: 335px;
-  height: 446px;
   border: 1px solid #eceded;
   border-radius: 15px;
   margin-top: 20px;
@@ -129,6 +134,7 @@ iframe {
 }
 
 .frame-image-wrapper {
+  width: 100%;
   position: relative;
   fill: white;
 }
@@ -197,7 +203,7 @@ iframe {
 
   .container-section {
     padding: 32px;
-    width: 614px;
+    max-width: 614px;
     height: 356px;
     border: 1px solid #eceded;
     border-radius: 15px;
@@ -234,7 +240,7 @@ iframe {
   .container-section {
     padding: 32px;
     margin: 0;
-    width: 516px;
+    max-width: 516px;
     height: 400px;
     border: 1px solid #eceded;
     border-radius: 15px;
