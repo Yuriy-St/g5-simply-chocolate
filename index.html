@@ -52,8 +52,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script type="module" crossorigin src="/g5-simply-chocolate/assets/index-93fe010a.js"></script>
-    <link rel="stylesheet" href="/g5-simply-chocolate/assets/index-6b2566a2.css">
+    <script type="module" crossorigin src="/g5-simply-chocolate/assets/index-becc4888.js"></script>
+    <link rel="stylesheet" href="/g5-simply-chocolate/assets/index-299b1780.css">
   </head>
   <body>
     <!-- Header -->
@@ -444,12 +444,39 @@
     <h2 class="secondary-title">How it's<span class="name"> made?</span></h2>
     <div class="chocolate">
       <div class="frame_wrapper">
-        <div class="youtube-container">
-          <div
-            class="youtube-player"
-            data-id="JtaNNcmdA7g"
-            data-thumbnail="./img/how-made/how-made-desktop.jpg"
-          ></div>
+        <iframe
+          id="iframe-hide"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/s0EbAUGftug"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <div class="frame-image-wrapper">
+          <img
+            class="frame-image-768"
+            srcset="/g5-simply-chocolate/assets/how-made-mobile@2x-831a68a4.jpg 2x"
+            src="/g5-simply-chocolate/assets/how-made-mobile-f02a6ce8.jpg"
+            alt="background how its made"
+          />
+
+          <img
+            class="frame-image-768up"
+            srcset="/g5-simply-chocolate/assets/how-made-desktop@2x-dea3e17c.jpg 2x"
+            src="/g5-simply-chocolate/assets/how-made-desktop-15bed338.jpg"
+            alt="background how its made"
+          />
+
+          <button
+            class="how-its-made-play-button"
+            onclick="parent.open('https://www.youtube.com/embed/s0EbAUGftug')"
+          >
+            <svg class="play-icon-svg">
+              <use href="/g5-simply-chocolate/assets/sprite-de3c8ffe.svg#play"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <!-- TEXT -->
@@ -517,7 +544,7 @@
             href="./img/our-products/gallery/orange@4x.jpg"
           >
             <img
-              srcset="../img/our-products/orange@2x.jpg"
+              srcset="/g5-simply-chocolate/assets/orange@2x-8291db3f.jpg "
               src="/g5-simply-chocolate/assets/orange-361f04a7.jpg"
               alt="Dark chocolate, Name - 'Orange'"
               width="230"
