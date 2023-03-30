@@ -12,24 +12,31 @@
   }
 }
 
+.foot-without-nav {
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 32px;
+}
+
 @media (min-width: 768px) {
   .foot-without-nav {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
+    margin-bottom: 74px;
   }
 }
 
-@media (min-width: 1200px) {
-  .foot-without-nav::after {
-    width: 1136px;
-    top: 180px;
+@media screen and (min-width: 1200px) {
+  .foot-without-nav {
+    padding-bottom: 62px;
+    margin-bottom: 82px;
   }
 }
 
 .foot-div {
   display: flex;
   justify-content: space-between;
-  padding: 32px 0;
 }
 
 @media (min-width: 768px) {
@@ -37,7 +44,6 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    padding: 0;
   }
 }
 
@@ -54,12 +60,14 @@
   font-weight: 500;
   letter-spacing: -0.02em;
   color: var(--inverted-text-color);
+  padding-bottom: 32px;
 }
 
 @media (min-width: 768px) {
   .foot-title {
     font-size: 28px;
     line-height: 1.21;
+    padding-bottom: 0;
   }
 }
 
@@ -125,53 +133,14 @@
   fill: var(--primary-brand-color);
 }
 
-.foot-without-nav::after {
-  position: absolute;
-  left: auto;
-  top: 224px;
-  display: block;
-  align-items: center;
-  content: '';
-  width: 280px;
-  height: 1px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transform: rotate(180deg);
-  transition-property: color;
-}
-
-@media screen and (min-width: 375px) {
-  .foot-without-nav::after {
-    width: 335px;
-  }
-}
-
-@media (min-width: 768px) {
-  .foot-without-nav::after {
-    position: absolute;
-    width: 704px;
-    height: 1px;
-    top: 172px;
-    display: block;
-    content: '';
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-}
-
-@media (min-width: 1200px) {
-  .foot-without-nav::after {
-    width: 1136px;
-    top: 180px;
-  }
-}
-
-.nav-list {
+.foot-nav-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
 @media (min-width: 768px) {
-  .nav-list {
+  .foot-nav-list {
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -192,18 +161,14 @@
   color: var(--primary-brand-color);
 }
 
-.foot.nav {
-  margin-top: 32px;
-}
-
 @media (min-width: 768px) {
-  .foot.nav {
+  .foot-nav {
     margin-top: 74px;
   }
 }
 
 @media (min-width: 1200px) {
-  .foot.nav {
+  .foot-nav {
     margin-top: 82px;
   }
 }
