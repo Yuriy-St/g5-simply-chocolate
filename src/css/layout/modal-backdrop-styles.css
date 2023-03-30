@@ -41,7 +41,7 @@
 }
 
 /* landspace and min-width 768 fix for tablet */
-@media screen and (orientation: landscape) and (max-width: 768px) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
   .general-modals {
     top: 0;
     left: 50%;
