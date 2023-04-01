@@ -7,7 +7,7 @@
   overflow: scroll;
   width: 100%;
   height: 100%;
-  background-color: #e2e2e2;
+  background-color: var(--backdrop-color);
 
   pointer-events: none;
   visibility: hidden;
@@ -79,7 +79,7 @@
 }
 
 /* ---EXEMPLE--- */
-/* If your modal number is 2,3,4 use this num when add .modal*.active class 
+/* If your modal number is 2,3,4 use this num when add .modal*.active class
 like .modal2.active ,  .modal3.active...
 */
 
@@ -104,7 +104,7 @@ like .modal2.active ,  .modal3.active...
 }
 
 /* Гайд лайн по модалке */
-/* 
+/*
 1) В файл backdrop-modal.html закидываете свою модалку (БЕЗ BACKDROP он у нас один общий)
 2) В главный div вашей модалки вставляете следущие классы  modal и modal1 (НЕЛЬЗЯ ДУБЛИРОВАТЬ НОМЕРА)
 Первый номер уже занят rewiews. И сразу же этому Div добавляете атрибут  data-modal="1" (Номер соответствует номеру который вы выбрали для класса modal)

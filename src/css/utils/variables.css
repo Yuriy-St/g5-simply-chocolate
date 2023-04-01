@@ -12,11 +12,13 @@
   /* сіра окантовка кнопок*/
   --light-stroke-color: rgba(17, 17, 17, 0.1);
   /* текст в інпут-плейсхолдерах */
-  --placeholder-text-color: rgba(64, 64, 64, 0.3);
+  --placeholder-text-color: rgba(64, 64, 64, 0.4);
   /* сірий фон */
   --light-background-color: #fafafa;
   /* темно фіолетовий фон */
   --dark-background-color: #1e1823;
+  /* колір бекдропу для модалок */
+  --backdrop-color: rgba(30, 24, 35, 0.3);
   /* ще якийсь білий колір з макету */
   --white-color: #fafafa;
   /* стандартний час і функція для транзишинів */
